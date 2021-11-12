@@ -83,9 +83,7 @@
 		</c:otherwise>
 	</c:choose>
 
-</div>
-
-<%-- MANAGER --%>
+</div><%-- MANAGER --%>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
@@ -105,6 +103,8 @@
 	</c:choose>
 
 </div>
+
+
 
 
 
@@ -130,8 +130,6 @@
 </div>
 
 
-
-<<<<<<< HEAD
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
@@ -179,13 +177,15 @@
 
 =======
 >>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-getfit_america.git
-<%-- Trainer --%>
+<%-- CRUD SELECTION FOR ALL ENTITIES --%>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
 			<a href="<c:url value='/jsps/trainer/menuTrainer.jsp'/>" target="_parent">CRUD Trainer</a> |&nbsp;
 			<a href="<c:url value='/jsps/receptionist/menuReceptionist.jsp'/>" target="_parent">CRUD Receptionist</a> |&nbsp;
-
+			<a href="<c:url value='/jsps/department/department_menu.jsp'/>" target="_parent">CRUD Department</a> |&nbsp;
+			<a href="<c:url value='/jsps/manager/manager_menu.jsp'/>" target="_parent">CRUD Manager</a> |&nbsp;
+			
 		</c:when>
 		<c:otherwise>
 			Hello：${sessionScope.session_user.username };
