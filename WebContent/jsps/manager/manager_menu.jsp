@@ -22,12 +22,12 @@
   </head>
   
   <body>
-    <h1>CRUD operations for Entity1 </h1>
+    <h1>CRUD operations for Manager </h1>
     <br>
-	<a href="<c:url value='/jsps/entity1/entity1create.jsp'/>" target="_parent">Create Entity1</a> |&nbsp; 
-	<a href="<c:url value='/jsps/entity1/entity1read.jsp'/>" target="_parent">Read Entity1</a> |&nbsp;
-	<a href="<c:url value='/jsps/entity1/entity1update.jsp'/>" target="_parent">Update Entity1</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Entity1</a>	
+		<a href="<c:url value='/jsps/manager/manager_create.jsp'/>" target="_parent">Create Manager</a> |&nbsp; 
+		<a href="<c:url value='/jsps/manager/manager_read.jsp'/>" target="_parent">Read Manager</a> |&nbsp;
+		<a href="<c:url value='/jsps/manager/manager_update.jsp'/>" target="_parent">Update Manager</a> |&nbsp;	 
+		<a href="<c:url value='/jsps/manager/manager_delete.jsp'/>" target="_parent">Delete Manager</a>	
 	    
   </body>
 </html>

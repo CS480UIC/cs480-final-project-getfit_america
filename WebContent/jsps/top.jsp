@@ -83,9 +83,7 @@
 		</c:otherwise>
 	</c:choose>
 
-</div>
-
-<%-- MANAGER --%>
+</div><%-- MANAGER --%>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
@@ -105,6 +103,8 @@
 	</c:choose>
 
 </div>
+
+
 
 
 
@@ -130,8 +130,11 @@
 </div>
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> refs/remotes/origin/main
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
@@ -177,17 +180,29 @@
 
 
 
+<<<<<<< HEAD
 
 <%-- Trainer --%>
+=======
+=======
+>>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-getfit_america.git
+<%-- CRUD SELECTION FOR ALL ENTITIES --%>
+>>>>>>> refs/remotes/origin/main
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
 			<a href="<c:url value='/jsps/trainer/menuTrainer.jsp'/>" target="_parent">CRUD Trainer</a> |&nbsp;
 			<a href="<c:url value='/jsps/receptionist/menuReceptionist.jsp'/>" target="_parent">CRUD Receptionist</a> |&nbsp;
+<<<<<<< HEAD
 			<a href="<c:url value='/jsps/client/menuClient.jsp'/>" target="_parent">CRUD Client</a> |&nbsp;
 			<a href="<c:url value='/jsps/program/menuProgram.jsp'/>" target="_parent">CRUD Program</a> |&nbsp;
 			<a href="<c:url value='/jsps/appointment/menuAppointment.jsp'/>" target="_parent">CRUD Appointment</a> |&nbsp;
 
+=======
+			<a href="<c:url value='/jsps/department/department_menu.jsp'/>" target="_parent">CRUD Department</a> |&nbsp;
+			<a href="<c:url value='/jsps/manager/manager_menu.jsp'/>" target="_parent">CRUD Manager</a> |&nbsp;
+			
+>>>>>>> refs/remotes/origin/main
 		</c:when>
 		<c:otherwise>
 			Hello：${sessionScope.session_user.username };
