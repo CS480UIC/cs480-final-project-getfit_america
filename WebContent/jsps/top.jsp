@@ -18,7 +18,7 @@
 	-->
 <style type="text/css">
 	body {
-		background: #982289; 
+		background: #FFC107; 
 	}
 	a {
 		text-transform:none;
@@ -40,9 +40,9 @@
 			<a href="<c:url value='/jsps/entity1/entity1create.jsp'/>" target="_parent">Create Entity1</a> |&nbsp; 
 			<a href="<c:url value='/jsps/entity1/entity1read.jsp'/>" target="_parent">Read Entity1</a> |&nbsp;
 			<a href="<c:url value='/jsps/entity1/entity1update.jsp'/>" target="_parent">Update Entity1</a> |&nbsp;	 
-			<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Entity1</a>			
-			
-	
+			<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Entity1</a>		
+
+
 		</c:when>
 		<c:otherwise>
 			Hello：${sessionScope.session_user.username };
@@ -54,6 +54,32 @@
 	</c:choose>
 
 </div>
+
+
+<div style="font-size: 10pt;">
+	<c:choose>
+		<c:when test="${empty sessionScope.session_user }">
+			<a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent">Login</a> |&nbsp; 
+			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a> |&nbsp;
+			<a href="<c:url value='/jsps/department/department_create.jsp'/>" target="_parent">Create Department</a> |&nbsp; 
+			<a href="<c:url value='/jsps/entity1/entity1read.jsp'/>" target="_parent">Read Department</a> |&nbsp;
+			<a href="<c:url value='/jsps/entity1/entity1update.jsp'/>" target="_parent">Update Department</a> |&nbsp;	 
+			<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Department</a>		
+
+		</c:when>
+		<c:otherwise>
+			Hello：${sessionScope.session_user.username };
+			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
+			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
+
+		</c:otherwise>
+	</c:choose>
+
+</div>
+
+
+
   </body>
 </html>
 
