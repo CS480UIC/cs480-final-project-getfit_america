@@ -21,19 +21,13 @@
   </head>
   
   <body>
-  <h1>Update</h1>
+  <h1>Update Receptionist</h1>
 <form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update employee id   :<input type="text" name="username" value="${form.username }"/>
+	Update Receptionist   :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Update First name   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>	
-	Update Last name   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>	
-	<input type="submit" value="Update Trainer"/>
+	<input type="submit" value="Update Receptionist"/>
 </form>
   </body>
 </html>

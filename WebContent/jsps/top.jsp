@@ -31,7 +31,7 @@
   </head>
   
   <body>
-<h1 style="text-align: center;">Get fit America mitchell----</h1>
+<h1 style="text-align: center;">Get fit America</h1>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
@@ -109,6 +109,7 @@
 
 
 
+<<<<<<< HEAD
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
@@ -154,15 +155,14 @@
 
 
 
+=======
+>>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-getfit_america.git
 <%-- Trainer --%>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
-
-			<a href="<c:url value='/jsps/trainer/trainerCreate.jsp'/>" target="_parent">Create Trainer</a> |&nbsp; 
-			<a href="<c:url value='/jsps/trainer/trainerRead.jsp'/>" target="_parent">Read Trainer</a> |&nbsp;
-			<a href="<c:url value='/jsps/trainer/trainerUpdate.jsp'/>" target="_parent">Update Trainer</a> |&nbsp;	 
-			<a href="<c:url value='/jsps/trainer/trainerDelete.jsp'/>" target="_parent">Delete Trainer</a>		
+			<a href="<c:url value='/jsps/trainer/menuTrainer.jsp'/>" target="_parent">CRUD Trainer</a> |&nbsp;
+			<a href="<c:url value='/jsps/receptionist/menuReceptionist.jsp'/>" target="_parent">CRUD Receptionist</a> |&nbsp;
 
 		</c:when>
 		<c:otherwise>
@@ -176,8 +176,12 @@
 
 </div>
 
+<<<<<<< HEAD
 
 
+=======
+<%-- Receptionist --%>
+>>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-getfit_america.git
 
 
 
