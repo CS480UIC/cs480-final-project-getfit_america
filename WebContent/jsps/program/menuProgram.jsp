@@ -24,10 +24,10 @@
   <body>
     <h1>CRUD operations for Program </h1>
     <br>
-	<a href="<c:url value='/jsps/program/programcreate.jsp'/>" target="_parent">Create Program</a> |&nbsp; 
-	<a href="<c:url value='/jsps/program/programread.jsp'/>" target="_parent">Read Program</a> |&nbsp;
-	<a href="<c:url value='/jsps/program/programupdate.jsp'/>" target="_parent">Update Program</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/program/programdelete.jsp'/>" target="_parent">Delete Program</a>	
+			<a href="<c:url value='/jsps/program/program_create.jsp'/>" target="_parent">Create Program</a> |&nbsp; 
+			<a href="<c:url value='/jsps/program/programread.jsp'/>" target="_parent">Read Program</a> |&nbsp;
+			<a href="<c:url value='/jsps/program/programupdate.jsp'/>" target="_parent">Update Program</a> |&nbsp;	 
+			<a href="<c:url value='/jsps/program/programdelete.jsp'/>" target="_parent">Delete Program</a>		
 	    
   </body>
 </html>

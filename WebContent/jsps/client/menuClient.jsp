@@ -24,10 +24,10 @@
   <body>
     <h1>CRUD operations for Client </h1>
     <br>
-	<a href="<c:url value='/jsps/entity1/entity1create.jsp'/>" target="_parent">Create Client</a> |&nbsp; 
-	<a href="<c:url value='/jsps/entity1/entity1read.jsp'/>" target="_parent">Read Client</a> |&nbsp;
-	<a href="<c:url value='/jsps/entity1/entity1update.jsp'/>" target="_parent">Update Client</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Client</a>	
+			<a href="<c:url value='/jsps/client/client_create.jsp'/>" target="_parent">Create Client</a> |&nbsp; 
+			<a href="<c:url value='/jsps/client/clientread.jsp'/>" target="_parent">Read Client</a> |&nbsp;
+			<a href="<c:url value='/jsps/client/clientupdate.jsp'/>" target="_parent">Update Client</a> |&nbsp;	 
+			<a href="<c:url value='/jsps/client/clientdelete.jsp'/>" target="_parent">Delete Client</a>		
 	    
   </body>
 </html>

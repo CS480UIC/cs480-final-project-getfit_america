@@ -24,10 +24,10 @@
   <body>
     <h1>CRUD operations for Appointment </h1>
     <br>
-	<a href="<c:url value='/jsps/appointment/appointmentcreate.jsp'/>" target="_parent">Create Appointment</a> |&nbsp; 
-	<a href="<c:url value='/jsps/appointment/appointmentread.jsp'/>" target="_parent">Read Appointment</a> |&nbsp;
-	<a href="<c:url value='/jsps/appointment/appointmentupdate.jsp'/>" target="_parent">Update Appointment</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/appointment/appointmentdelete.jsp'/>" target="_parent">Delete Appointment</a>	
+			<a href="<c:url value='/jsps/appointment/appointment_create.jsp'/>" target="_parent">Create Appointment</a> |&nbsp; 
+			<a href="<c:url value='/jsps/appointment/appointmentread.jsp'/>" target="_parent">Read Appointment</a> |&nbsp;
+			<a href="<c:url value='/jsps/appointment/appointmentupdate.jsp'/>" target="_parent">Update Appointment</a> |&nbsp;	 
+			<a href="<c:url value='/jsps/appointment/appointmentdelete.jsp'/>" target="_parent">Delete Appointment</a>	
 	    
   </body>
 </html>

@@ -131,7 +131,7 @@
 
 
 
-<<<<<<< HEAD
+
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
@@ -177,14 +177,16 @@
 
 
 
-=======
->>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-getfit_america.git
+
 <%-- Trainer --%>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
 			<a href="<c:url value='/jsps/trainer/menuTrainer.jsp'/>" target="_parent">CRUD Trainer</a> |&nbsp;
 			<a href="<c:url value='/jsps/receptionist/menuReceptionist.jsp'/>" target="_parent">CRUD Receptionist</a> |&nbsp;
+			<a href="<c:url value='/jsps/client/menuClient.jsp'/>" target="_parent">CRUD Client</a> |&nbsp;
+			<a href="<c:url value='/jsps/program/menuProgram.jsp'/>" target="_parent">CRUD Program</a> |&nbsp;
+			<a href="<c:url value='/jsps/appointment/menuAppointment.jsp'/>" target="_parent">CRUD Appointment</a> |&nbsp;
 
 		</c:when>
 		<c:otherwise>
@@ -198,16 +200,9 @@
 
 </div>
 
-<<<<<<< Upstream, based on origin/main
-<<<<<<< HEAD
 
-
-=======
 <%-- Receptionist --%>
->>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-getfit_america.git
-=======
 
->>>>>>> 37024f3 just commiting some
 
 
 
