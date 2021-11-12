@@ -5,8 +5,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <base href="">
     
-    <title>Delete Entity</title>
+    <title>body</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,21 +22,12 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="clientID" value="${client.clientid }"/>
-	ID    :<input type="text" name="clientID" value="${client.clientid }" disabled/>
-	<br/>
-	
-	First Name：<input type="text" name="password" value="${client.firstname }" disabled/>
-	<br/>
-	Last Name	：<input type="text" name="email" value="${client.lastname }" disabled/>
-	<br/>
-	<input type="submit" value="Delete Client"/>
-</form>
-
-</body>
+    <h1>CRUD operations for Appointment </h1>
+    <br>
+	<a href="<c:url value='/jsps/appointment/appointmentcreate.jsp'/>" target="_parent">Create Appointment</a> |&nbsp; 
+	<a href="<c:url value='/jsps/appointment/appointmentread.jsp'/>" target="_parent">Read Appointment</a> |&nbsp;
+	<a href="<c:url value='/jsps/appointment/appointmentupdate.jsp'/>" target="_parent">Update Appointment</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/appointment/appointmentdelete.jsp'/>" target="_parent">Delete Appointment</a>	
+	    
+  </body>
 </html>
- 

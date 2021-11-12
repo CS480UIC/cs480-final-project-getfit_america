@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Appointment Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,21 +21,20 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="clientID" value="${client.clientid }"/>
-	ID    :<input type="text" name="clientID" value="${client.clientid }" disabled/>
+  <h1>Appointment Create</h1>
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+	Program    :<input type="text" name="programName" value="${form.programName }"/>
+	<span style="color: red; font-weight: 900">${errors.programName }</span>
 	<br/>
 	
-	First Name：<input type="text" name="password" value="${client.firstname }" disabled/>
+	Date    :<input type="text" name="date" value="${form.date }"/>
+	<span style="color: red; font-weight: 900">${errors.date }</span>
 	<br/>
-	Last Name	：<input type="text" name="email" value="${client.lastname }" disabled/>
+	
+	Program    :<input type="text" name="location" value="${form.location }"/>
+	<span style="color: red; font-weight: 900">${errors.location }</span>
 	<br/>
-	<input type="submit" value="Delete Client"/>
+	<input type="submit" value="Create Appointment"/>
 </form>
-
-</body>
+  </body>
 </html>
- 

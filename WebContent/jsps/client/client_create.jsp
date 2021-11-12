@@ -23,7 +23,7 @@
   <body>
   <h1>Client Create</h1>
 <form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	ID    :<input type="text" name="username" value="${form.code }"/>
+	ID    :<input type="text" name="clientID" value="${form.clientid }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	First Name：<input type="text" name="name" value="${form.firstname }"/>
@@ -32,9 +32,16 @@
 	Last Name：<input type="text" name="name" value="${form.lastname }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	Age	：<input type="text" name="managerID" value="${form.age }"/>
+	Age	：<input type="text" name="age" value="${form.age }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
+	Weight	：<input type="text" name="weight" value="${form.weight }"/>
+	<span style="color: red; font-weight: 900">${errors.email }</span>
+	<br/>
+	Body Fat Percentage	：<input type="text" name="bodyfatpercentage" value="${form.bodyfatpercentage }"/>
+	<span style="color: red; font-weight: 900">${errors.email }</span>
+	<br/>
+	
 	<input type="submit" value="Create Client"/>
 </form>
   </body>

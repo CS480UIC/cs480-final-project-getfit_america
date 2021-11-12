@@ -84,24 +84,23 @@
 
 </div>
 
-<<<<<<< HEAD
+
 
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
-			<a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent">Login</a> |&nbsp; 
-			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a> |&nbsp;
-			<a href="<c:url value='/jsps/client/client_create.jsp'/>" target="_parent">Create client</a> |&nbsp; 
-			<a href="<c:url value='/jsps/client/clientread.jsp'/>" target="_parent">Read client</a> |&nbsp;
-			<a href="<c:url value='/jsps/client/clientupdate.jsp'/>" target="_parent">Update client</a> |&nbsp;	 
-			<a href="<c:url value='/jsps/client/clientdelete.jsp'/>" target="_parent">Delete client</a>		
+
+			<a href="<c:url value='/jsps/client/client_create.jsp'/>" target="_parent">Create Client</a> |&nbsp; 
+			<a href="<c:url value='/jsps/client/clientread.jsp'/>" target="_parent">Read Client</a> |&nbsp;
+			<a href="<c:url value='/jsps/client/clientupdate.jsp'/>" target="_parent">Update Client</a> |&nbsp;	 
+			<a href="<c:url value='/jsps/client/clientdelete.jsp'/>" target="_parent">Delete Client</a>		
 
 		</c:when>
 		<c:otherwise>
 			Hello：${sessionScope.session_user.username };
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
-			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/client/menu.jsp'/>" target="body">CRUD Client</a> |&nbsp;&nbsp;
 
 		</c:otherwise>
 	</c:choose>
@@ -110,7 +109,51 @@
 
 
 
-=======
+<div style="font-size: 10pt;">
+	<c:choose>
+		<c:when test="${empty sessionScope.session_user }">
+
+			<a href="<c:url value='/jsps/program/program_create.jsp'/>" target="_parent">Create Program</a> |&nbsp; 
+			<a href="<c:url value='/jsps/program/programread.jsp'/>" target="_parent">Read Program</a> |&nbsp;
+			<a href="<c:url value='/jsps/program/programupdate.jsp'/>" target="_parent">Update Program</a> |&nbsp;	 
+			<a href="<c:url value='/jsps/program/programdelete.jsp'/>" target="_parent">Delete Program</a>		
+
+		</c:when>
+		<c:otherwise>
+			Hello：${sessionScope.session_user.username };
+			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
+			<a href="<c:url value='/jsps/program/menu.jsp'/>" target="body">CRUD Program</a> |&nbsp;&nbsp;
+
+		</c:otherwise>
+	</c:choose>
+
+</div>
+
+<div style="font-size: 10pt;">
+	<c:choose>
+		<c:when test="${empty sessionScope.session_user }">
+
+			<a href="<c:url value='/jsps/appointment/appointment_create.jsp'/>" target="_parent">Create Appointment</a> |&nbsp; 
+			<a href="<c:url value='/jsps/appointment/appointmentread.jsp'/>" target="_parent">Read Appointment</a> |&nbsp;
+			<a href="<c:url value='/jsps/appointment/appointmentupdate.jsp'/>" target="_parent">Update Appointment</a> |&nbsp;	 
+			<a href="<c:url value='/jsps/appointment/appointmentdelete.jsp'/>" target="_parent">Delete Appointment</a>		
+
+		</c:when>
+		<c:otherwise>
+			Hello：${sessionScope.session_user.username };
+			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
+			<a href="<c:url value='/jsps/appointment/menu.jsp'/>" target="body">CRUD Appointment</a> |&nbsp;&nbsp;
+
+		</c:otherwise>
+	</c:choose>
+
+</div>
+
+
+
+
 <%-- Trainer --%>
 <div style="font-size: 10pt;">
 	<c:choose>
@@ -132,7 +175,11 @@
 	</c:choose>
 
 </div>
->>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-getfit_america.git
+
+
+
+
+
 
 
   </body>
