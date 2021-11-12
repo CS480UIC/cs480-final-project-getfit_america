@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Read Client</h1>
+  <h1>Read Receptionist</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/Entity1ServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
