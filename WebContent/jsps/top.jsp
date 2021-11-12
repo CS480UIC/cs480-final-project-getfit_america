@@ -198,12 +198,16 @@
 
 </div>
 
+<<<<<<< Upstream, based on origin/main
 <<<<<<< HEAD
 
 
 =======
 <%-- Receptionist --%>
 >>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-getfit_america.git
+=======
+
+>>>>>>> 37024f3 just commiting some
 
 
 
