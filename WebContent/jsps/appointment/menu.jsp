@@ -22,12 +22,12 @@
   </head>
   
   <body>
-    <h1>CRUD operations for Trainer </h1>
+    <h1>CRUD operations for Appointment </h1>
     <br>
-		<a href="<c:url value='/jsps/trainer/trainerCreate.jsp'/>" target="_parent">Create Trainer</a> |&nbsp; 
-		<a href="<c:url value='/jsps/trainer/trainerRead.jsp'/>" target="_parent">Read Trainer</a> |&nbsp;
-		<a href="<c:url value='/jsps/trainer/trainerUpdate.jsp'/>" target="_parent">Update Trainer</a> |&nbsp;	 
-		<a href="<c:url value='/jsps/trainer/trainerDelete.jsp'/>" target="_parent">Delete Trainer</a>
+	<a href="<c:url value='/jsps/appointment/appointmentcreate.jsp'/>" target="_parent">Create Appointment</a> |&nbsp; 
+	<a href="<c:url value='/jsps/appointment/appointmentread.jsp'/>" target="_parent">Read Appointment</a> |&nbsp;
+	<a href="<c:url value='/jsps/appointment/appointmentupdate.jsp'/>" target="_parent">Update Appointment</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/appointment/appointmentdelete.jsp'/>" target="_parent">Delete Appointment</a>	
 	    
   </body>
 </html>

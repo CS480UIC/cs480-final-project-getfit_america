@@ -5,9 +5,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <base href="">
     
-    <title>body</title>
+    <title>Appointment Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,12 +21,20 @@
   </head>
   
   <body>
-    <h1>CRUD operations for Trainer </h1>
-    <br>
-		<a href="<c:url value='/jsps/trainer/trainerCreate.jsp'/>" target="_parent">Create Trainer</a> |&nbsp; 
-		<a href="<c:url value='/jsps/trainer/trainerRead.jsp'/>" target="_parent">Read Trainer</a> |&nbsp;
-		<a href="<c:url value='/jsps/trainer/trainerUpdate.jsp'/>" target="_parent">Update Trainer</a> |&nbsp;	 
-		<a href="<c:url value='/jsps/trainer/trainerDelete.jsp'/>" target="_parent">Delete Trainer</a>
-	    
+  <h1>Appointment Create</h1>
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+	Program    :<input type="text" name="programName" value="${form.programName }"/>
+	<span style="color: red; font-weight: 900">${errors.programName }</span>
+	<br/>
+	
+	Date    :<input type="text" name="date" value="${form.date }"/>
+	<span style="color: red; font-weight: 900">${errors.date }</span>
+	<br/>
+	
+	Program    :<input type="text" name="location" value="${form.location }"/>
+	<span style="color: red; font-weight: 900">${errors.location }</span>
+	<br/>
+	<input type="submit" value="Create Appointment"/>
+</form>
   </body>
 </html>
