@@ -84,7 +84,7 @@
 
 </div>
 
-<<<<<<< HEAD
+
 
 <div style="font-size: 10pt;">
 	<c:choose>
@@ -132,7 +132,29 @@
 	</c:choose>
 
 </div>
->>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-getfit_america.git
+
+<%-- Receptionist --%>
+<div style="font-size: 10pt;">
+	<c:choose>
+		<c:when test="${empty sessionScope.session_user }">
+
+			<a href="<c:url value='/jsps/receptionist/receptionistCreate.jsp'/>" target="_parent">Create Receptionist</a> |&nbsp; 
+			<a href="<c:url value='/jsps/receptionist/receptionistRead.jsp'/>" target="_parent">Read Receptionist</a> |&nbsp;
+			<a href="<c:url value='/jsps/receptionist/receptionistUpdate.jsp'/>" target="_parent">Update Receptionist</a> |&nbsp;	 
+			<a href="<c:url value='/jsps/receptionist/receptionistDelete.jsp'/>" target="_parent">Delete Receptionist</a>		
+
+		</c:when>
+		<c:otherwise>
+			Hello：${sessionScope.session_user.username };
+			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
+			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
+
+		</c:otherwise>
+	</c:choose>
+
+</div>
+
 
 
   </body>
