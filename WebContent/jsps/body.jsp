@@ -25,7 +25,7 @@
     <h1>The project will be about health and fitness. 
     As we know, obesity has been on the rise for a long time. Also, a lot of people tend to do crash diets(keto diets, intermitent fasting, etc,..), which I believe is not the right way to stay healthy because most of the time, the person will end up not sticking with the diet. Over 50% of American adults are obese. In this database, the database will contain a person's name, age, weight, body fat percentage, weight goal, and reason/motivation for trying to get healthy. Java and mySQL will be used to develop this database.
      The originality of my database seems pretty original.
-      I haven't really encountered any health and fitness database like this one. aaM</h1>
+      I haven't really encountered any health and fitness database like this one. aaMasdad</h1>
     
   </body>
 </html>
