@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Create Department</title>
+    <title>Update Department</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,18 +21,13 @@
   </head>
   
   <body>
-  <h1>Create Department</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	Code    :<input type="text" name="username" value="${form.code }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+  <h1>Update Department</h1>
+<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+	<input type="hidden" name="method" value="search"/>
+	Update Department Name   :<input type="text" name="department name" value="${form.departmentName }"/>
+	<span style="color: red; font-weight: 900">${errors.departmentName }</span>
 	<br/>
-	Name：<input type="text" name="name" value="${form.name }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	ManagerID	：<input type="text" name="managerID" value="${form.managerid }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/>
-	<input type="submit" value="Create Department"/>
+	<input type="submit" value="Update Department Name"/>
 </form>
   </body>
 </html>

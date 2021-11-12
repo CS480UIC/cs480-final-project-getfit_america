@@ -64,13 +64,35 @@
 </div>
 
 
+<%-- DEPARTMENT --%>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
 			<a href="<c:url value='/jsps/department/department_create.jsp'/>" target="_parent">Create Department</a> |&nbsp; 
 			<a href="<c:url value='/jsps/department/department_read.jsp'/>" target="_parent">Read Department</a> |&nbsp;
-			<a href="<c:url value='/jsps/entity1/entity1update.jsp'/>" target="_parent">Update Department</a> |&nbsp;	 
-			<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Department</a>		
+			<a href="<c:url value='/jsps/department/department_update.jsp'/>" target="_parent">Update Department</a> |&nbsp;	 
+			<a href="<c:url value='/jsps/department/department_delete.jsp'/>" target="_parent">Delete Department</a>		
+
+		</c:when>
+		<c:otherwise>
+			Hello：${sessionScope.session_user.username };
+			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
+			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
+
+		</c:otherwise>
+	</c:choose>
+
+</div>
+
+<%-- MANAGER --%>
+<div style="font-size: 10pt;">
+	<c:choose>
+		<c:when test="${empty sessionScope.session_user }">
+			<a href="<c:url value='/jsps/manager/manager_create.jsp'/>" target="_parent">Create Manager</a> |&nbsp; 
+			<a href="<c:url value='/jsps/manager/manager_read.jsp'/>" target="_parent">Read Manager</a> |&nbsp;
+			<a href="<c:url value='/jsps/manager/manager_update.jsp'/>" target="_parent">Update Manager</a> |&nbsp;	 
+			<a href="<c:url value='/jsps/manager/manager_delete.jsp'/>" target="_parent">Delete Manager</a>		
 
 		</c:when>
 		<c:otherwise>

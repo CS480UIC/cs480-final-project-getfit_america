@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Create Department</title>
+    <title>Read Entity Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,18 +21,17 @@
   </head>
   
   <body>
-  <h1>Create Department</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	Code    :<input type="text" name="username" value="${form.code }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+  <h1>Read Entity Output</h1>
+<p style="color: red; font-weight: 900">${msg }</p>
+<form>
+	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
 	<br/>
-	Name：<input type="text" name="name" value="${form.name }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
 	<br/>
-	ManagerID	：<input type="text" name="managerID" value="${form.managerid }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
 	<br/>
-	<input type="submit" value="Create Department"/>
 </form>
-  </body>
+
+<button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
+</body>
 </html>

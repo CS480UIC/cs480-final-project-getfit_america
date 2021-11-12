@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Create Department</title>
+    <title>Create Manager</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -14,25 +14,29 @@
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
 
   </head>
   
   <body>
-  <h1>Create Department</h1>
+  <h1>Create Manager</h1>
 <form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	Code    :<input type="text" name="username" value="${form.code }"/>
+	Manager ID    :<input type="text" name="manager id" value="${form.managerID }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Name：<input type="text" name="name" value="${form.name }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	
+	Assigned Department   :<input type="text" name="assigned department" value="${form.assignedDepartment }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	ManagerID	：<input type="text" name="managerID" value="${form.managerid }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	
+	First Name    :<input type="text" name="first name" value="${form.firstName }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	<input type="submit" value="Create Department"/>
+
+	Last Name    :<input type="text" name="last name" value="${form.lastName }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+	
+	<input type="submit" value="Create Manager"/>
 </form>
   </body>
 </html>
