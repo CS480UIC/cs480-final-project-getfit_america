@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Client Create</h1>
+  <h1>Receptionist Create</h1>
 <form action="<c:url value='/Entity1ServletCreate'/>" method="post">
 	ID    :<input type="text" name="username" value="${form.code }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>

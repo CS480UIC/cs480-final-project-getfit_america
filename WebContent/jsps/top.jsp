@@ -31,7 +31,7 @@
   </head>
   
   <body>
-<h1 style="text-align: center;">Get fit America mitchell----</h1>
+<h1 style="text-align: center;">Get fit America</h1>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
@@ -110,16 +110,12 @@
 
 
 
-=======
 <%-- Trainer --%>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
-
-			<a href="<c:url value='/jsps/trainer/trainerCreate.jsp'/>" target="_parent">Create Trainer</a> |&nbsp; 
-			<a href="<c:url value='/jsps/trainer/trainerRead.jsp'/>" target="_parent">Read Trainer</a> |&nbsp;
-			<a href="<c:url value='/jsps/trainer/trainerUpdate.jsp'/>" target="_parent">Update Trainer</a> |&nbsp;	 
-			<a href="<c:url value='/jsps/trainer/trainerDelete.jsp'/>" target="_parent">Delete Trainer</a>		
+			<a href="<c:url value='/jsps/trainer/menuTrainer.jsp'/>" target="_parent">CRUD Trainer</a> |&nbsp;
+			<a href="<c:url value='/jsps/receptionist/menuReceptionist.jsp'/>" target="_parent">CRUD Receptionist</a> |&nbsp;
 
 		</c:when>
 		<c:otherwise>
@@ -134,26 +130,7 @@
 </div>
 
 <%-- Receptionist --%>
-<div style="font-size: 10pt;">
-	<c:choose>
-		<c:when test="${empty sessionScope.session_user }">
 
-			<a href="<c:url value='/jsps/receptionist/receptionistCreate.jsp'/>" target="_parent">Create Receptionist</a> |&nbsp; 
-			<a href="<c:url value='/jsps/receptionist/receptionistRead.jsp'/>" target="_parent">Read Receptionist</a> |&nbsp;
-			<a href="<c:url value='/jsps/receptionist/receptionistUpdate.jsp'/>" target="_parent">Update Receptionist</a> |&nbsp;	 
-			<a href="<c:url value='/jsps/receptionist/receptionistDelete.jsp'/>" target="_parent">Delete Receptionist</a>		
-
-		</c:when>
-		<c:otherwise>
-			Hello：${sessionScope.session_user.username };
-			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
-			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
-
-		</c:otherwise>
-	</c:choose>
-
-</div>
 
 
 
