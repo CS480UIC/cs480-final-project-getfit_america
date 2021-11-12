@@ -86,6 +86,33 @@
 
 </div>
 
+
+<div style="font-size: 10pt;">
+	<c:choose>
+		<c:when test="${empty sessionScope.session_user }">
+			<a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent">Login</a> |&nbsp; 
+			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a> |&nbsp;
+			<a href="<c:url value='/jsps/client/client_create.jsp'/>" target="_parent">Create client</a> |&nbsp; 
+			<a href="<c:url value='/jsps/client/clientread.jsp'/>" target="_parent">Read client</a> |&nbsp;
+			<a href="<c:url value='/jsps/client/clientupdate.jsp'/>" target="_parent">Update client</a> |&nbsp;	 
+			<a href="<c:url value='/jsps/client/clientdelete.jsp'/>" target="_parent">Delete client</a>		
+
+		</c:when>
+		<c:otherwise>
+			Hello：${sessionScope.session_user.username };
+			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
+			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
+
+		</c:otherwise>
+	</c:choose>
+
+</div>
+
+
+
+
+
   </body>
 </html>
 
