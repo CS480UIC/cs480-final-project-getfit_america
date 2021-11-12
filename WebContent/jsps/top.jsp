@@ -68,7 +68,7 @@
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
 			<a href="<c:url value='/jsps/department/department_create.jsp'/>" target="_parent">Create Department</a> |&nbsp; 
-			<a href="<c:url value='/jsps/entity1/entity1read.jsp'/>" target="_parent">Read Department</a> |&nbsp;
+			<a href="<c:url value='/jsps/department/department_read.jsp'/>" target="_parent">Read Department</a> |&nbsp;
 			<a href="<c:url value='/jsps/entity1/entity1update.jsp'/>" target="_parent">Update Department</a> |&nbsp;	 
 			<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Department</a>		
 
