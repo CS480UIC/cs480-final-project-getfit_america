@@ -40,17 +40,17 @@
 			<a href="<c:url value='/jsps/entity1/entity1create.jsp'/>" target="_parent">Create Entity1</a> |&nbsp; 
 			<a href="<c:url value='/jsps/entity1/entity1read.jsp'/>" target="_parent">Read Entity1</a> |&nbsp;
 			<a href="<c:url value='/jsps/entity1/entity1update.jsp'/>" target="_parent">Update Entity1</a> |&nbsp;	 
-<<<<<<< HEAD
+
 			<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Entity1</a>	
 			
 		
 			
-	
-=======
+
+
 			<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Entity1</a>		
 
 
->>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-getfit_america.git
+
 		</c:when>
 		<c:otherwise>
 			Hello：${sessionScope.session_user.username };
@@ -67,8 +67,6 @@
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
-			<a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent">Login</a> |&nbsp; 
-			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a> |&nbsp;
 			<a href="<c:url value='/jsps/department/department_create.jsp'/>" target="_parent">Create Department</a> |&nbsp; 
 			<a href="<c:url value='/jsps/entity1/entity1read.jsp'/>" target="_parent">Read Department</a> |&nbsp;
 			<a href="<c:url value='/jsps/entity1/entity1update.jsp'/>" target="_parent">Update Department</a> |&nbsp;	 
@@ -86,6 +84,7 @@
 
 </div>
 
+<<<<<<< HEAD
 
 <div style="font-size: 10pt;">
 	<c:choose>
@@ -111,6 +110,29 @@
 
 
 
+=======
+<%-- Trainer --%>
+<div style="font-size: 10pt;">
+	<c:choose>
+		<c:when test="${empty sessionScope.session_user }">
+
+			<a href="<c:url value='/jsps/trainer/trainerCreate.jsp'/>" target="_parent">Create Trainer</a> |&nbsp; 
+			<a href="<c:url value='/jsps/trainer/trainerRead.jsp'/>" target="_parent">Read Trainer</a> |&nbsp;
+			<a href="<c:url value='/jsps/trainer/trainerUpdate.jsp'/>" target="_parent">Update Trainer</a> |&nbsp;	 
+			<a href="<c:url value='/jsps/trainer/trainerDelete.jsp'/>" target="_parent">Delete Trainer</a>		
+
+		</c:when>
+		<c:otherwise>
+			Hello：${sessionScope.session_user.username };
+			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
+			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
+
+		</c:otherwise>
+	</c:choose>
+
+</div>
+>>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-getfit_america.git
 
 
   </body>
