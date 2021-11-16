@@ -10,7 +10,11 @@ Also, the database will contain what that person's goal is, it could be to lose 
 ![image](https://cdn.discordapp.com/attachments/880192510734008450/908598821142028338/unknown.png)
 ![image](https://cdn.discordapp.com/attachments/880192510734008450/908599029863165992/unknown.png)
 ![image](https://cdn.discordapp.com/attachments/880192510734008450/908599166786220072/unknown.png)
+<<<<<<< HEAD
 ![image](https://cdn.discordapp.com/attachments/880192510734008450/908599166786220072/unknown.png)
 ![image](https://cdn.discordapp.com/attachments/880192510734008450/908599029863165992/unknown.png)
 ![image](https://cdn.discordapp.com/attachments/880192510734008450/908599166786220072/unknown.png)
+=======
+![image](https://cdn.discordapp.com/attachments/880192510734008450/908603278818947122/unknown.png)
+>>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-getfit_america.git
 

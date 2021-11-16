@@ -1,0 +1,6 @@
+ID,department_id,first_name,last_name,created_at
+2001,1001,Sam,White,NULL
+2002,1002,Anne,Lee,NULL
+2003,1003,Rick,Roll,NULL
+2004,1004,Richard,Daley,NULL
+2005,1005,Mitch,Hell,NULL
