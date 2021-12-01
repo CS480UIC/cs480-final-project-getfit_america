@@ -46,6 +46,16 @@
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
 			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
+			
+			<%-- ADDED THIS SO WHEN USER LOGS IN WE CAN SEE THE CRUD OPERATIONS  LINE 51 - 58 --%>
+			<a href="<c:url value='/jsps/trainer/menuTrainer.jsp'/>" target="_parent">CRUD Trainer</a> |&nbsp;
+			<a href="<c:url value='/jsps/receptionist/menuReceptionist.jsp'/>" target="_parent">CRUD Receptionist</a> |&nbsp;
+			<a href="<c:url value='/jsps/client/menuClient.jsp'/>" target="_parent">CRUD Client</a> |&nbsp;
+			<a href="<c:url value='/jsps/program/menuProgram.jsp'/>" target="_parent">CRUD Program</a> |&nbsp;
+			<a href="<c:url value='/jsps/appointment/menuAppointment.jsp'/>" target="_parent">CRUD Appointment</a> |&nbsp;
+
+			<a href="<c:url value='/jsps/department/department_menu.jsp'/>" target="_parent">CRUD Department</a> |&nbsp;
+			<a href="<c:url value='/jsps/manager/manager_menu.jsp'/>" target="_parent">CRUD Manager</a> |&nbsp;
 
 		</c:otherwise>
 	</c:choose>
@@ -112,6 +122,17 @@
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
 			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
+			
+			<%-- ADDED THIS SO WHEN USER LOGS IN WE CAN SEE THE CRUD OPERATIONS  LINE 118 - 126 --%>
+			
+			<a href="<c:url value='/jsps/trainer/menuTrainer.jsp'/>" target="_parent">CRUD Trainer</a> |&nbsp;
+			<a href="<c:url value='/jsps/receptionist/menuReceptionist.jsp'/>" target="_parent">CRUD Receptionist</a> |&nbsp;
+			<a href="<c:url value='/jsps/client/menuClient.jsp'/>" target="_parent">CRUD Client</a> |&nbsp;
+			<a href="<c:url value='/jsps/program/menuProgram.jsp'/>" target="_parent">CRUD Program</a> |&nbsp;
+			<a href="<c:url value='/jsps/appointment/menuAppointment.jsp'/>" target="_parent">CRUD Appointment</a> |&nbsp;
+
+			<a href="<c:url value='/jsps/department/department_menu.jsp'/>" target="_parent">CRUD Department</a> |&nbsp;
+			<a href="<c:url value='/jsps/manager/manager_menu.jsp'/>" target="_parent">CRUD Manager</a> |&nbsp;
 
 		</c:otherwise>
 	</c:choose>
