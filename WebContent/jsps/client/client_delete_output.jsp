@@ -25,7 +25,7 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/ClientServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-	<input type="hidden" name="client_id" value="${client.clientid }"/>
+	<input type="hidden" name="client_id" value="${client.client_id }"/>
 	
 	
 	
@@ -41,7 +41,7 @@
 	<br/>
 	Weight	：<input type="text" name="weight" value="${client.weight }"disabled/>
 	<br/>
-	Body Fat Percentage	：<input type="text" name="body_fat_percentage" value="${client.body_fat_percentage }"disabled/>
+	Body Fat Percentage	：<input type="text" name="body_fat" value="${client.body_fat }"disabled/>
 	<br/>
 	
 	
