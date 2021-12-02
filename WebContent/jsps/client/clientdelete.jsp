@@ -22,9 +22,9 @@
   
   <body>
   <h1>Delete Client</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/ClientServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete Client   :<input type="text" name="username" value="${form.username }"/>
+	Delete Client   :<input type="text" name="client_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	<input type="submit" value="Delete Client"/>

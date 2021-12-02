@@ -25,7 +25,7 @@
     <h1>Welcome to the Demo</h1>
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 
+ 	<a href="<c:url value='/findAll'/>" target="body">Please list all the trainers in the table</a>&nbsp;&nbsp;
     
   </body>
 </html>

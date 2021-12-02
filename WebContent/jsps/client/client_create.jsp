@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title>Client Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,24 +22,28 @@
   
   <body>
   <h1>Client Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/ClientServletCreate'/>" method="post">
+
 	ID    :<input type="text" name="clientID" value="${form.clientid }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>		
+	Trainer ID    :<input type="text" name="trainerID" value="${form.trainerid }"/>
+	<span style="color: red; font-weight: 900">${errors.trainerid }</span>
+	<br/>	
+	First Name：<input type="text" name="first_name" value="${form.first_name }"/>
+	<span style="color: red; font-weight: 900">${errors.firstname }</span>
 	<br/>
-	First Name：<input type="text" name="name" value="${form.firstname }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Last Name：<input type="text" name="name" value="${form.lastname }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Last Name：<input type="text" name="last_name" value="${form.last_name }"/>
+	<span style="color: red; font-weight: 900">${errors.lastname }</span>
 	<br/>
 	Age	：<input type="text" name="age" value="${form.age }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	<span style="color: red; font-weight: 900">${errors.age }</span>
 	<br/>
 	Weight	：<input type="text" name="weight" value="${form.weight }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	<span style="color: red; font-weight: 900">${errors.weight }</span>
 	<br/>
-	Body Fat Percentage	：<input type="text" name="bodyfatpercentage" value="${form.bodyfatpercentage }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Body Fat Percentage	：<input type="text" name="bodyfatpercentage" value="${form.body_fat }"/>
+	<span style="color: red; font-weight: 900">${errors.body_fat }</span>
 	<br/>
 	
 	<input type="submit" value="Create Client"/>

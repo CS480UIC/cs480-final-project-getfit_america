@@ -23,17 +23,31 @@
   <body>
   <h1>Delete Entity</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/ClientServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="clientID" value="${client.clientid }"/>
-	ID    :<input type="text" name="clientID" value="${client.clientid }" disabled/>
+	<input type="hidden" name="client_id" value="${client.clientid }"/>
+	
+	
+	
+	Client ID    :<input type="text" name="client_id" value="${client.client_id }"disabled/>
+	<br/>		
+	Trainer ID    :<input type="text" name="trainer_id" value="${client.trainer_id }"disabled/>
+	<br/>	
+	First Name：<input type="text" name="first_name" value="${client.first_name }"disabled/>
+	<br/>
+	Last Name：<input type="text" name="Last_name" value="${client.last_name }"disabled/>
+	<br/>
+	Age	：<input type="text" name="age" value="${client.age }"disabled/>
+	<br/>
+	Weight	：<input type="text" name="weight" value="${client.weight }"disabled/>
+	<br/>
+	Body Fat Percentage	：<input type="text" name="body_fat_percentage" value="${client.body_fat_percentage }"disabled/>
 	<br/>
 	
-	First Name：<input type="text" name="password" value="${client.firstname }" disabled/>
-	<br/>
-	Last Name	：<input type="text" name="email" value="${client.lastname }" disabled/>
-	<br/>
+	
 	<input type="submit" value="Delete Client"/>
+	
+	
 </form>
 
 </body>

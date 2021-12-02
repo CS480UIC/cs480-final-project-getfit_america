@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Trainer</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,21 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete Trainer</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/TrainerServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
-	<br/>
+	<input type="hidden" name="employee_id" value="${trainer.employee_id }"/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	
+	
+	Employee ID    :<input type="text" name="employee_id" value="${trainer.employee_id }"disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	First Name：<input type="text" name="First Name" value="${trainer.first_name }"disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	Last Name	：<input type="text" name="Last Name" value="${trainer.last_name }"disabled/>
+	<br/>
+	<input type="submit" value="Delete Trainer"/>
 </form>
 
 </body>

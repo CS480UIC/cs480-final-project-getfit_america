@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Client Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,15 +21,30 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Client Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+
+	Client ID    :<input type="text" name="client_id" value="${client.client_id }"disabled/>
+	<br/>		
+	Trainer ID    :<input type="text" name="trainer_id" value="${client.trainer_id }"disabled/>
+	<br/>	
+	First Name：<input type="text" name="first_name" value="${client.first_name }"disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Last Name：<input type="text" name="Last_name" value="${client.last_name }"disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Age	：<input type="text" name="age" value="${client.age }"disabled/>
 	<br/>
+	Weight	：<input type="text" name="weight" value="${client.weight }"disabled/>
+	<br/>
+	Body Fat Percentage	：<input type="text" name="body_fat" value="${client.body_fat }"disabled/>
+	<br/>
+	
+	
+	
+	
+	
+	
 </form>
 
 <button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>

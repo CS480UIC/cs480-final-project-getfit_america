@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Trainer Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,15 +21,20 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Trainer Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+<form>	
+	
+	Employee ID    :<input type="text" name="employee id" value="${trainer.employee_id }"disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	First Name：<input type="text" name="First Name" value="${trainer.first_name }"disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Last Name	：<input type="text" name="Last Name" value="${trainer.last_name }"disabled/>
 	<br/>
+	
+	
+	
+	
 </form>
 
 <button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
