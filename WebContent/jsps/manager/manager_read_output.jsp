@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Read Manager Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,21 +21,24 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Read Manager Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+<form>
+
+
+	Manager ID    :<input type="text" name="id" value="${manager.id}"disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Assigned Department   :<input type="text" name="assigned department" value="${manager.department_id }"/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	First Name    :<input type="text" name="first name" value="${manager.first_name }"disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	Last Name    :<input type="text" name="last name" value="${manager.last_name }"disabled/>
+	<br/>	
+	Created at    :<input type="text" name="created at" value="${manager.created_at }"disabled/>
+	<br/>
+		
 </form>
 
+<button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
 </body>
 </html>
- 

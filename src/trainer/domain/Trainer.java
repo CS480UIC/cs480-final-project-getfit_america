@@ -12,6 +12,11 @@ public class Trainer {
 	 */
 	
 	private Integer employee_id;
+	private String first_name; 
+	private String last_name;
+
+	
+	
 	public Integer getEmployee_id() {
 		return employee_id;
 	}
@@ -30,8 +35,9 @@ public class Trainer {
 	public void setLast_name(String last_name) {
 		this.last_name = last_name;
 	}
-	private String first_name; 
-	private String last_name;
+
+
+
 	
 	
 }

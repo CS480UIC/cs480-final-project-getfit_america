@@ -52,7 +52,7 @@ public class TrainerServletCreate extends HttpServlet {
 		}
 		
 		
-		form.setEmployee_id(Integer.parseInt(info.get(0)));
+		form.setEmployee_id(Integer.parseInt(info.get(0)));		
 		form.setFirst_name(info.get(1));
 		form.setLast_name(info.get(2));	
 		

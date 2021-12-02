@@ -22,7 +22,7 @@
   
   <body>
   <h1>Delete Manager</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/ManagerServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Delete Manager ID   :<input type="text" name="username" value="${form.managerID }"/>
 	<span style="color: red; font-weight: 900">${errors.managerID }</span>

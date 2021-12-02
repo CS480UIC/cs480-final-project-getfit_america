@@ -23,22 +23,15 @@
   <body>
   <h1>Read Manager</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/ManagerServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	
-	Manager ID    :<input type="text" name="first name" value="${form.managerID }"/>
-	<span style="color: red; font-weight: 900">${errors.managerID }</span>
-	<br/>	
-
-	First Name    :<input type="text" name="first name" value="${form.firstName }"/>
-	<span style="color: red; font-weight: 900">${errors.firstName }</span>
+	Manager ID    :<input type="text" name="id" value="${form.id }"/>
+	<span style="color: red; font-weight: 900">${errors.id }</span>
 	<br/>
 
-	Last Name    :<input type="text" name="first name" value="${form.lastName }"/>
-	<span style="color: red; font-weight: 900">${errors.lastName }</span>
-	<br/>
 
-	<input type="submit" value="Read Manageer"/>
+	<input type="submit" value="Read Manager"/>
 </form>
   </body>
 </html>

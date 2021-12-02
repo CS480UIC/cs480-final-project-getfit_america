@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title>Receptionist Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,15 +22,15 @@
   
   <body>
   <h1>Receptionist Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	ID    :<input type="text" name="username" value="${form.code }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/ReceptionistServletCreate'/>" method="post">
+	Employee ID    :<input type="text" name="username" value="${form.employee_id }"/>
+	<span style="color: red; font-weight: 900">${errors.employee_id }</span>
 	<br/>
-	First Name：<input type="text" name="name" value="${form.firstname }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	First Name：<input type="text" name="first_name" value="${form.first_name }"/>
+	<span style="color: red; font-weight: 900">${errors.first_name }</span>
 	<br/>
-	Last Name：<input type="text" name="name" value="${form.lastname }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Last Name：<input type="text" name="last_name" value="${form.last_name }"/>
+	<span style="color: red; font-weight: 900">${errors.last_name }</span>
 	<br/>
 	<input type="submit" value="Create Receptionist"/>
 </form>

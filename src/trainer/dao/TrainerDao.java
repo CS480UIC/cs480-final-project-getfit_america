@@ -41,7 +41,7 @@ public class TrainerDao {
 
 		    while(resultSet.next()){
 		    	Integer employee_id = Integer.parseInt(resultSet.getString("employee_id"));
-		    	if(employee_id == employee_id_p){
+		    	if(employee_id.equals(employee_id_p)){
 		    		trainer.setEmployee_id(employee_id);
 		    		trainer.setFirst_name(resultSet.getString("first_name"));
 		    		trainer.setLast_name(resultSet.getString("last_name"));
@@ -70,9 +70,9 @@ public class TrainerDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/getfitamerica", MySQL_user, MySQL_password);
 			
-			String sql = "insert into trainer (employee_id, first_name,last_name) values(?,?,?)";
+			String sql = "insert into trainer (employee_id,first_name,last_name) values(?,?,?)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setInt(1,form.getEmployee_id());
+		    preparestatement.setInt(1,form.getEmployee_id());		   
 		    preparestatement.setString(2,form.getFirst_name());
 		    preparestatement.setString(3,form.getLast_name());
 		    preparestatement.executeUpdate();

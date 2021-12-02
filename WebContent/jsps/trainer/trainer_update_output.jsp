@@ -26,6 +26,7 @@
 <form>
 	Employee ID    :<input type="text" name="employee id" value="${trainer.employee_id }"disabled/>
 	<br/>
+
 	First Name：<input type="text" name="First Name" value="${trainer.first_name }"disabled/>
 	<br/>
 	Last Name	：<input type="text" name="Last Name" value="${trainer.last_name }"disabled/>
@@ -42,6 +43,7 @@
 		
 	Employee ID：<input type="text" name="employee id" value="${form.employee_id }"/>
 	<br/>
+
 	First Name	：<input type="text" name="first name" value="${form.first_name }"/>
 	<br/>
 	

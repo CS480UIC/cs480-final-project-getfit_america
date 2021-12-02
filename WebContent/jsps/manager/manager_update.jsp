@@ -14,30 +14,19 @@
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
 
   </head>
   
   <body>
-  <h1>Update Manager</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+  <h1>Update</h1>
+<form action="<c:url value='/ManagerServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	
-	Select Manager ID   :<input type="text" name="username" value="${form.managerID }"/>
-	<span style="color: red; font-weight: 900">${errors.managerID }</span>
+	Update ID   :<input type="text" name="ID" value="${form.ID }"/>
+	<span style="color: red; font-weight: 900">${errors.ID }</span>
 	<br/>
-	
-	Update First Name   :<input type="text" name="first name" value="${form.firstName }"/>
-	<span style="color: red; font-weight: 900">${errors.firstName }</span>
-	<br/>
-
-	Update Last Name   :<input type="text" name="last name" value="${form.lastName }"/>
-	<span style="color: red; font-weight: 900">${errors.lastName }</span>
-	<br/>
-
-	Update Assigned Department  :<input type="text" name="username" value="${form.lastName }"/>
-	<span style="color: red; font-weight: 900">${errors.lastName }</span>
-	<br/>
-	
 	<input type="submit" value="Update Manager"/>
 </form>
   </body>

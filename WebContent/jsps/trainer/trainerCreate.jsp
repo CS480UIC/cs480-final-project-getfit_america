@@ -26,6 +26,7 @@
 	Employee ID    :<input type="text" name="employee id" value="${form.employee_id }"/>
 	<span style="color: red; font-weight: 900">${errors.employeee_id }</span>
 	<br/>
+
 	First Name：<input type="text" name="First Name" value="${form.first_name }"/>
 	<span style="color: red; font-weight: 900">${errors.first_name }</span>
 	<br/>

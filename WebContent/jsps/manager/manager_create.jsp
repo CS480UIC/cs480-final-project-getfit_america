@@ -19,23 +19,27 @@
   
   <body>
   <h1>Create Manager</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	Manager ID    :<input type="text" name="manager id" value="${form.managerID }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/ManagerServletCreate'/>" method="post">
+	Manager ID    :<input type="text" name="id" value="${form.id }"/>
+	<span style="color: red; font-weight: 900">${errors.ID }</span>
 	<br/>
 	
 	Assigned Department   :<input type="text" name="assigned department" value="${form.assignedDepartment }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<span style="color: red; font-weight: 900">${errors.assignedDepartment }</span>
 	<br/>
 	
 	First Name    :<input type="text" name="first name" value="${form.firstName }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<span style="color: red; font-weight: 900">${errors.firstName }</span>
 	<br/>
 
 	Last Name    :<input type="text" name="last name" value="${form.lastName }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<span style="color: red; font-weight: 900">${errors.lastName }</span>
 	<br/>
 	
+	Created at    :<input type="text" name="created at" value="${form.createdAt }"/>
+	<span style="color: red; font-weight: 900">${errors.createdAt }</span>
+	<br/>
+		
 	<input type="submit" value="Create Manager"/>
 </form>
   </body>

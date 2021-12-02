@@ -24,17 +24,17 @@
   <h1>Client Create</h1>
 <form action="<c:url value='/ClientServletCreate'/>" method="post">
 
-	ID    :<input type="text" name="clientID" value="${form.clientid }"/>
+	ID    :<input type="text" name="client_id" value="${form.client_id }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>		
-	Trainer ID    :<input type="text" name="trainerID" value="${form.trainerid }"/>
+	Trainer ID    :<input type="text" name="client_id" value="${form.trainer_id }"/>
 	<span style="color: red; font-weight: 900">${errors.trainerid }</span>
 	<br/>	
 	First Name：<input type="text" name="first_name" value="${form.first_name }"/>
-	<span style="color: red; font-weight: 900">${errors.firstname }</span>
+	<span style="color: red; font-weight: 900">${errors.first_name }</span>
 	<br/>
 	Last Name：<input type="text" name="last_name" value="${form.last_name }"/>
-	<span style="color: red; font-weight: 900">${errors.lastname }</span>
+	<span style="color: red; font-weight: 900">${errors.last_name }</span>
 	<br/>
 	Age	：<input type="text" name="age" value="${form.age }"/>
 	<span style="color: red; font-weight: 900">${errors.age }</span>
@@ -42,7 +42,7 @@
 	Weight	：<input type="text" name="weight" value="${form.weight }"/>
 	<span style="color: red; font-weight: 900">${errors.weight }</span>
 	<br/>
-	Body Fat Percentage	：<input type="text" name="bodyfatpercentage" value="${form.body_fat }"/>
+	Body Fat Percentage	：<input type="text" name="body_fat" value="${form.body_fat }"/>
 	<span style="color: red; font-weight: 900">${errors.body_fat }</span>
 	<br/>
 	
