@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity1.dao.Entity1Dao;
-import entity1.domain.Entity1;
+import entity1.dao.Entitiy1Dao;
+import entity1.domain.Manager;
 
 
 /**
@@ -37,8 +37,8 @@ public class Entity1ServletRead extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Entity1 entity1 = null;
-		Entity1Dao entity1Dao = new Entity1Dao();
+		Manager entity1 = null;
+		Entitiy1Dao entity1Dao = new Entitiy1Dao();
 		
 		try {
 			entity1 = entity1Dao.findByUsername(request.getParameter("username"));

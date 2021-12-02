@@ -22,12 +22,30 @@
   
   <body>
   <h1>Delete Manager</h1>
+<p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/ManagerServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Delete Manager ID   :<input type="text" name="username" value="${form.managerID }"/>
-	<span style="color: red; font-weight: 900">${errors.managerID }</span>
+	<input type="hidden" name="method" value="delete"/>
+	<input type="hidden" name="id" value="${manager.id }"/>
+	
+	Manager ID    :<input type="text" name="id" value="${manager.id}"disabled/>
 	<br/>
-	<input type="submit" value="Delete Manager"/>
+	
+	Assigned Department   :<input type="text" name="assigned department" value="${manager.assignedDepartment }"/>
+	<br/>
+	
+	First Name    :<input type="text" name="first name" value="${manager.firstName }"disabled/>
+	<br/>
+
+	Last Name    :<input type="text" name="last name" value="${manager.lastName }"disabled/>
+	<br/>
+	
+	Created at    :<input type="text" name="created at" value="${manager.createdAt }"disabled/>
+	<br/>	
+
+	<input type="submit" value="Delete Entity1"/>
 </form>
-  </body>
+</form>
+
+</body>
 </html>
+ 

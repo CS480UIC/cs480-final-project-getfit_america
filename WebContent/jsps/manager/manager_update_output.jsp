@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Create Manager</title>
+    <title>Delete Entity</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -14,33 +14,50 @@
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
 
   </head>
   
   <body>
-  <h1>Create Manager</h1>
-<form action="<c:url value='/ManagerServletCreate'/>" method="post">
-	Manager ID    :<input type="text" name="id" value="${form.id }"/>
-	<span style="color: red; font-weight: 900">${errors.ID }</span>
+  <h1>Update Manager</h1>
+<p style="color: red; font-weight: 900">${msg }</p>
+<form>
+	Manager ID    :<input type="text" name="ID" value="${manager.ID }"disabled/>
 	<br/>
 	
+	Assigned Department   :<input type="text" name="assigned department" value="${manager.assignedDepartment }"disabled/>
+	<br/>
+	
+	First Name    :<input type="text" name="first name" value="${manager.firstName }"disabled/>
+	<br/>
+
+	Last Name    :<input type="text" name="last name" value="${manager.lastName }"disabled/>
+	<br/>
+	
+	Created at    :<input type="text" name="created at" value="${manager.createdAt }"disabled/>
+	<br/>
+</form>
+<h1>Update the values below</h1>
+<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+		<input type="hidden" name="method" value="update"/>
+				<input type="hidden" name="username" value="${manager.ID }"/>
+				
+				
 	Assigned Department   :<input type="text" name="assigned department" value="${form.assignedDepartment }"/>
-	<span style="color: red; font-weight: 900">${errors.assignedDepartment }</span>
 	<br/>
 	
 	First Name    :<input type="text" name="first name" value="${form.firstName }"/>
-	<span style="color: red; font-weight: 900">${errors.firstName }</span>
 	<br/>
 
 	Last Name    :<input type="text" name="last name" value="${form.lastName }"/>
-	<span style="color: red; font-weight: 900">${errors.lastName }</span>
 	<br/>
 	
 	Created at    :<input type="text" name="created at" value="${form.createdAt }"/>
-	<span style="color: red; font-weight: 900">${errors.createdAt }</span>
 	<br/>
-		
-	<input type="submit" value="Create Manager"/>
+	<input type="submit" value="Update Manager"/>
 </form>
-  </body>
+
+</body>
 </html>

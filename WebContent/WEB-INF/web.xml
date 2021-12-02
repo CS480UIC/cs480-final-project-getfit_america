@@ -99,6 +99,61 @@
   
   <servlet>
     <description></description>
+    <display-name>ReceptionistServletCreate</display-name>
+    <servlet-name>ReceptionistServletCreate</servlet-name>
+    <servlet-class>receptionist.web.servlet.ReceptionistServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReceptionistServletCreate</servlet-name>
+    <url-pattern>/ReceptionistServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ManagerServletCreate</display-name>
+    <servlet-name>ManagerServletCreate</servlet-name>
+    <servlet-class>manager.web.servlet.ManagerServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerServletCreate</servlet-name>
+    <url-pattern>/ManagerServletCreate</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <description></description>
+    <display-name>ManagerServletRead</display-name>
+    <servlet-name>ManagerServletRead</servlet-name>
+    <servlet-class>manager.web.servlet.ManagerServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerServletRead</servlet-name>
+    <url-pattern>/ManagerServletRead</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>ManagerServletUpdate</display-name>
+    <servlet-name>ManagerServletUpdate</servlet-name>
+    <servlet-class>manager.web.servlet.ManagerServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerServletUpdate</servlet-name>
+    <url-pattern>/ManagerServletUpdate</url-pattern>
+  </servlet-mapping>  
+
+  <servlet>
+    <description></description>
+    <display-name>ManagerServletDelete</display-name>
+    <servlet-name>ManagerServletDelete</servlet-name>
+    <servlet-class>manager.web.servlet.ManagerServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerServletDelete</servlet-name>
+    <url-pattern>/ManagerServletDelete</url-pattern>
+  </servlet-mapping>    
+  
+  <servlet>
+    <description></description>
     <display-name>findAll</display-name>
     <servlet-name>findAll</servlet-name>
     
