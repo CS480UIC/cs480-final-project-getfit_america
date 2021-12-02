@@ -25,7 +25,7 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 
-	Employee ID    :<input type="text" name="username" value="${receptionist.employee_id }"disabled/>
+	Employee ID    :<input type="text" name="employee_id" value="${receptionist.employee_id }"disabled/>
 	<span style="color: red; font-weight: 900">${errors.employee_id }</span>
 	<br/>
 	First Name：<input type="text" name="first_name" value="${receptionist.first_name }"disabled/>

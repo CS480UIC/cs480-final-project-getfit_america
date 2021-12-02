@@ -79,8 +79,8 @@ public class ReceptionistServletUpdate extends HttpServlet {
 
 			
 			form.setEmployee_id(Integer.parseInt(request.getParameter("employee_id")));
-			form.setFirst_name(info.get(1));
-			form.setLast_name(info.get(2));
+			form.setFirst_name(info.get(2));
+			form.setLast_name(info.get(3));
 			try {
 				receptionistdao.update(form);
 

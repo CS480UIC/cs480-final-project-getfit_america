@@ -24,7 +24,7 @@
   <h1>Update</h1>
 <form action="<c:url value='/TrainerServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update Trainer   :<input type="text" name="employee id" value="${form.employee_id }"/>
+	Update Trainer   :<input type="text" name="employee_id" value="${form.employee_id }"/>
 	<span style="color: red; font-weight: 900">${errors.employee_id }</span>
 	<br/>
 	<input type="submit" value="Update Entity1"/>

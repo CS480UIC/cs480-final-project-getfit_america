@@ -24,7 +24,7 @@
   <h1>Update Trainer</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Employee ID    :<input type="text" name="employee id" value="${trainer.employee_id }"disabled/>
+	Employee ID    :<input type="text" name="employee_id" value="${trainer.employee_id }"disabled/>
 	<br/>
 
 	First Name：<input type="text" name="First Name" value="${trainer.first_name }"disabled/>
@@ -41,7 +41,7 @@
 		<input type="hidden" name="employee_id" value="${trainer.employee_id }"/>
 		
 		
-	Employee ID：<input type="text" name="employee id" value="${form.employee_id }"/>
+	Employee ID：<input type="text" name="employee_id" value="${form.employee_id }"disabled/>
 	<br/>
 
 	First Name	：<input type="text" name="first name" value="${form.first_name }"/>

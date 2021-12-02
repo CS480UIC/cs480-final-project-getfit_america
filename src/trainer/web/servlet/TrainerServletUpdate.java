@@ -47,7 +47,7 @@ public class TrainerServletUpdate extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				trainer = trainerdao.findByEmployeeID(Integer.parseInt(request.getParameter("employee id")));
+				trainer = trainerdao.findByEmployeeID(Integer.parseInt(request.getParameter("employee_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -78,7 +78,7 @@ public class TrainerServletUpdate extends HttpServlet {
 			}
 			
 			//TODO fix
-			form.setEmployee_id(Integer.parseInt(info.get(1)));
+			form.setEmployee_id(Integer.parseInt(request.getParameter("employee_id")));
 			form.setFirst_name(info.get(2));
 			form.setLast_name(info.get(3));	
 
