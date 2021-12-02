@@ -23,10 +23,23 @@
   <body>
   <h1>Delete Program</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/AppointmentServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${program.username }"/>
-	Program    :<input type="text" name="username" value="${program.username }" disabled/>
+		<input type="hidden" name="selected_prog" value="${appointment.selected_prog }"/>
+	Selected Program    :<input type="text" name="selected_prog" value="${appointment.selected_prog }"/>
+	<span style="color: red; font-weight: 900">${errors.selected_prog }</span>
+	<br/>
+	
+	Appointment Date    :<input type="text" name="appointment_date" value="${appointment.appointment_date }"/>
+	<span style="color: red; font-weight: 900">${errors.appointment_date }</span>
+	<br/>
+	
+	Location    :<input type="text" name="location" value="${appointment.location }"/>
+	<span style="color: red; font-weight: 900">${errors.location }</span>
+	<br/>
+	
+	Program app number    :<input type="text" name="program_app_num" value="${appointment.program_app_num }"/>
+	<span style="color: red; font-weight: 900">${errors.program_app_num }</span>
 	<br/>
 	<input type="submit" value="Delete Program"/>
 </form>

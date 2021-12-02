@@ -22,10 +22,10 @@
   
   <body>
   <h1>Update</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/AppointmentServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update Appointment   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Update Appointment   :<input type="text" name=selected_prog value="${form.selected_prog }"/>
+	<span style="color: red; font-weight: 900">${errors.selected_prog }</span>
 	<br/>
 	<input type="submit" value="Update Appointment"/>
 </form>

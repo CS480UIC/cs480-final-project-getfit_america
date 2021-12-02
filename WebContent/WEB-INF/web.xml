@@ -278,10 +278,52 @@
     <url-pattern>/ClientServletUpdate</url-pattern>
   </servlet-mapping>  
   
+    <servlet>
+    <description></description>
+    <display-name>AppointmentServletCreate</display-name>
+    <servlet-name>AppointmentServletCreate</servlet-name>
+    <servlet-class>appointment.web.servlet.AppointmentServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppointmentServletCreate</servlet-name>
+    <url-pattern>/AppointmentServletCreate</url-pattern>
+  </servlet-mapping>   
+    
+    <servlet>
+    <description></description>
+    <display-name>AppointmentServletRead</display-name>
+    <servlet-name>AppointmentServletRead</servlet-name>
+    <servlet-class>appointment.web.servlet.AppointmentServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppointmentServletRead</servlet-name>
+    <url-pattern>/AppointmentServletRead</url-pattern>
+  </servlet-mapping>       
+    
+    <servlet>
+    <description></description>
+    <display-name>AppointmentServletUpdate</display-name>
+    <servlet-name>AppointmentServletUpdate</servlet-name>
+    <servlet-class>appointment.web.servlet.AppointmentServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppointmentServletUpdate</servlet-name>
+    <url-pattern>/AppointmentServletUpdate</url-pattern>
+  </servlet-mapping>    
+  
+    <servlet>
+    <description></description>
+    <display-name>AppointmentServletDelete</display-name>
+    <servlet-name>AppointmentServletDelete</servlet-name>
+    <servlet-class>appointment.web.servlet.AppointmentServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppointmentServletDelete</servlet-name>
+    <url-pattern>/AppointmentServletDelete</url-pattern>
+  </servlet-mapping>     
+  
   <servlet>
   
-
-
     <description></description>
     <display-name>findAll</display-name>
     <servlet-name>findAll</servlet-name>

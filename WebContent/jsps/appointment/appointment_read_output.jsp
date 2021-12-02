@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Program Output</title>
+    <title>Read Appointment Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,10 +21,23 @@
   </head>
   
   <body>
-  <h1>Read Program Output</h1>
+  <h1>Read Appointment Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Program    :<input type="text" name="username" value="${program.username }" disabled/>
+	Selected Program    :<input type="text" name="selected_prog" value="${appointment.selected_prog }"disabled/>
+	<span style="color: red; font-weight: 900">${errors.selected_prog }</span>
+	<br/>
+	
+	Appointment Date    :<input type="text" name="appointment_date" value="${appointment.appointment_date }"disabled/>
+	<span style="color: red; font-weight: 900">${errors.appointment_date }</span>
+	<br/>
+	
+	Location    :<input type="text" name="location" value="${appointment.location }"disabled/>
+	<span style="color: red; font-weight: 900">${errors.location }</span>
+	<br/>
+	
+	Program app number    :<input type="text" name="program_app_num" value="${appointment.program_app_num }"disabled/>
+	<span style="color: red; font-weight: 900">${errors.program_app_num }</span>
 	<br/>
 
 </form>

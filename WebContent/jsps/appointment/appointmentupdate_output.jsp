@@ -21,28 +21,42 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Appointment</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	Selected Program    :<input type="text" name="selected_prog" value="${appointment.selected_prog }"/>
+	<span style="color: red; font-weight: 900">${errors.selected_prog }</span>
 	<br/>
 	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	Appointment Date    :<input type="text" name="appointment_date" value="${appointment.appointment_date }"/>
+	<span style="color: red; font-weight: 900">${errors.appointment_date }</span>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	
+	Location    :<input type="text" name="location" value="${appointment.location }"/>
+	<span style="color: red; font-weight: 900">${errors.location }</span>
+	<br/>
+	
+	Program app number    :<input type="text" name="program_app_num" value="${appointment.program_app_num }"/>
+	<span style="color: red; font-weight: 900">${errors.program_app_num }</span>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/AppointmentServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+		<input type="hidden" name="selected_prog" value="${appointment.selected_prog }"/>
+		
+	Appointment Date    :<input type="text" name="appointment_date" value="${form.appointment_date }"/>
+	<span style="color: red; font-weight: 900">${errors.appointment_date }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	
+	Location    :<input type="text" name="location" value="${form.location }"/>
+	<span style="color: red; font-weight: 900">${errors.location }</span>
 	<br/>
-	<input type="submit" value="Update Client"/>
+	
+	Program app number    :<input type="text" name="program_app_num" value="${form.program_app_num }"/>
+	<span style="color: red; font-weight: 900">${errors.program_app_num }</span>
+	<br/>
+	<input type="submit" value="Update Appointment"/>
 </form>
 
 </body>
