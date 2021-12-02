@@ -24,38 +24,40 @@
   <h1>Update Manager</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Manager ID    :<input type="text" name="ID" value="${manager.ID }"disabled/>
+	Manager ID    :<input type="text" name="id" value="${manager.id }"disabled/>
 	<br/>
 	
-	Assigned Department   :<input type="text" name="assigned department" value="${manager.assignedDepartment }"disabled/>
+	Assigned Department   :<input type="text" name="assigned department" value="${manager.department_id }"disabled/>
 	<br/>
 	
-	First Name    :<input type="text" name="first name" value="${manager.firstName }"disabled/>
+	First Name    :<input type="text" name="first name" value="${manager.first_name }"disabled/>
 	<br/>
 
-	Last Name    :<input type="text" name="last name" value="${manager.lastName }"disabled/>
+	Last Name    :<input type="text" name="last name" value="${manager.last_name }"disabled/>
 	<br/>
 	
-	Created at    :<input type="text" name="created at" value="${manager.createdAt }"disabled/>
+	Created at    :<input type="text" name="created at" value="${manager.created_at }"disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/ManagerServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${manager.ID }"/>
+		<input type="hidden" name="id" value="${manager.id }"/>
 				
 				
-	Assigned Department   :<input type="text" name="assigned department" value="${form.assignedDepartment }"/>
+	Assigned Department   :<input type="text" name="assigned department_id" value="${form.department_id }"disabled/>
 	<br/>
 	
-	First Name    :<input type="text" name="first name" value="${form.firstName }"/>
+	First Name    :<input type="text" name="first_name" value="${form.first_name }"/>
 	<br/>
 
-	Last Name    :<input type="text" name="last name" value="${form.lastName }"/>
+	Last Name    :<input type="text" name="last_name" value="${form.last_name }"/>
 	<br/>
 	
-	Created at    :<input type="text" name="created at" value="${form.createdAt }"/>
+	Created at    :<input type="text" name="created_at" value="${form.created_at }"/>
 	<br/>
+
+	
 	<input type="submit" value="Update Manager"/>
 </form>
 

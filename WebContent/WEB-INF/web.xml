@@ -110,6 +110,39 @@
   
   <servlet>
     <description></description>
+    <display-name>ReceptionistServletRead</display-name>
+    <servlet-name>ReceptionistServletRead</servlet-name>
+    <servlet-class>receptionist.web.servlet.ReceptionistServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReceptionistServletRead</servlet-name>
+    <url-pattern>/ReceptionistServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ReceptionistServletUpdate</display-name>
+    <servlet-name>ReceptionistServletUpdate</servlet-name>
+    <servlet-class>receptionist.web.servlet.ReceptionistServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReceptionistServletUpdate</servlet-name>
+    <url-pattern>/ReceptionistServletUpdate</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>ReceptionistServletDelete</display-name>
+    <servlet-name>ReceptionistServletDelete</servlet-name>
+    <servlet-class>receptionist.web.servlet.ReceptionistServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReceptionistServletDelete</servlet-name>
+    <url-pattern>/ReceptionistServletDelete</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <description></description>
     <display-name>ManagerServletCreate</display-name>
     <servlet-name>ManagerServletCreate</servlet-name>
     <servlet-class>manager.web.servlet.ManagerServletCreate</servlet-class>
@@ -245,10 +278,10 @@
     <url-pattern>/ClientServletUpdate</url-pattern>
   </servlet-mapping>  
   
-  
- 
-  
   <servlet>
+  
+
+
     <description></description>
     <display-name>findAll</display-name>
     <servlet-name>findAll</servlet-name>

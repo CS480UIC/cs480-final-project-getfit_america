@@ -101,13 +101,13 @@ public class ManagerDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/getfitamerica", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE manager SET id = ?, department_id = ?, first_name = ?, last_name = ?, created_at = ? where username = ?;";
+			String sql = "UPDATE manager SET department_id = ?, first_name = ?, last_name = ?, created_at = ? where id = ?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setInt(1,form.getId());
-			preparestatement.setInt(2,form.getDepartment_id());
-		    preparestatement.setString(3,form.getFirst_name());
-		    preparestatement.setString(4,form.getLast_name());
-		    preparestatement.setDate(5,form.getCreated_at());
+			preparestatement.setInt(1,form.getDepartment_id());
+			preparestatement.setString(2,form.getFirst_name());
+		    preparestatement.setString(3,form.getLast_name());
+		    preparestatement.setDate(4,form.getCreated_at());
+			preparestatement.setInt(5,form.getId());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {

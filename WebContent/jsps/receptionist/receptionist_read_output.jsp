@@ -21,14 +21,18 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Receptionist Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+
+	Employee ID    :<input type="text" name="username" value="${receptionist.employee_id }"disabled/>
+	<span style="color: red; font-weight: 900">${errors.employee_id }</span>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	First Name：<input type="text" name="first_name" value="${receptionist.first_name }"disabled/>
+	<span style="color: red; font-weight: 900">${errors.first_name }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Last Name：<input type="text" name="last_name" value="${receptionist.last_name }"disabled/>
+	<span style="color: red; font-weight: 900">${errors.last_name }</span>
 	<br/>
 </form>
 

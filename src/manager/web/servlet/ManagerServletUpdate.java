@@ -46,7 +46,7 @@ public class ManagerServletUpdate extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				manager = entity1dao.findByID(Integer.parseInt(request.getParameter("ID")));
+				manager = entity1dao.findByID(Integer.parseInt(request.getParameter("id")));
 				//entity1 = entity1dao.findByUsername(request.getParameter("username"));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
@@ -56,13 +56,13 @@ public class ManagerServletUpdate extends HttpServlet {
 				e1.printStackTrace();
 			}
 
-			if(manager.getFirst_name()!=null){
+			if(manager.getId()!=null){
 				request.setAttribute("manager", manager);
 				request.getRequestDispatcher("/jsps/manager/manager_update_output.jsp").forward(request, response);
 
 			}
 			else{
-				request.setAttribute("msg", "Entity not found");
+				request.setAttribute("msg", "manager not found");
 				request.getRequestDispatcher("/jsps/manager/manager_read_output.jsp").forward(request, response);
 			}
 		}
@@ -81,11 +81,11 @@ public class ManagerServletUpdate extends HttpServlet {
 //			form.setUsername(request.getParameter("username"));
 
 			
-			form.setId(Integer.parseInt(info.get(0)));
+			form.setId(Integer.parseInt(request.getParameter("id")));
 			form.setDepartment_id(Integer.parseInt(info.get(1)));
 			form.setFirst_name(info.get(2));
 			form.setLast_name(info.get(3));
-			form.setCreated_at(java.sql.Date.valueOf(info.get(4)));			
+			form.setCreated_at(java.sql.Date.valueOf(request.getParameter("created_at")));			
 			try {
 				entity1dao.update(form);
 

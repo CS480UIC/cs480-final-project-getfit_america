@@ -41,7 +41,7 @@ public class ReceptionistDao {
 
 		    while(resultSet.next()){
 		    	Integer employee_id = Integer.parseInt(resultSet.getString("employee_id"));
-		    	if(employee_id == employee_id_p){
+		    	if(employee_id.equals(employee_id_p)){
 		    		receptionist.setEmployee_id(employee_id);
 		    		receptionist.setFirst_name(resultSet.getString("first_name"));
 		    		receptionist.setLast_name(resultSet.getString("last_name"));
@@ -87,17 +87,17 @@ public class ReceptionistDao {
 	 * @throws IllegalAccessException
 	 */
 	
-	/*
+	
 	public void update(Receptionist form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/getfitamerica", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
+			String sql = "UPDATE receptionist SET first_name = ?, last_name = ? where employee_id = ?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,form.getPassword());
-			preparestatement.setString(2,form.getEmail());
-		    preparestatement.setString(3,form.getUsername());
+		    preparestatement.setString(1, form.getFirst_name());
+		    preparestatement.setString(2, form.getLast_name());
+		    preparestatement.setInt(3, form.getEmployee_id());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
@@ -105,27 +105,27 @@ public class ReceptionistDao {
 		}
 	}
 	
-	*/
+	
 	/**
 	 * @param username
 	 * @throws ClassNotFoundException
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	/*
-	public void delete(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	
+	public void delete(String employee_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/getfitamerica", MySQL_user, MySQL_password);
 			
-			String sql = "delete from entity1 where username = ?";
+			String sql = "delete from receptionist where employee_id = ?";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,username);
+		    preparestatement.setInt(1,Integer.parseInt(employee_id_p));
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
 	}
-	*/
+	
 }
