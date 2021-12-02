@@ -22,10 +22,13 @@
   </head>
   
   <body>
-    <h1>Welcome to the Demo</h1>
+    <h1>List of Queries</h1>
+    <h2>First three simples queries</h2>
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 	<a href="<c:url value='/findAll'/>" target="body">Please list all the trainers in the table</a>&nbsp;&nbsp;
-    
+    <br/>
+ 	<a href="<c:url value='/findAllTrainers'/>" target="body">Please list all the trainers in the table</a>&nbsp;&nbsp;
+    <br/>
+    <a href="<c:url value='/findAllManager_2003_2005'/>" target="body">Manager id between 2003 and 2005</a>&nbsp;&nbsp;
   </body>
 </html>

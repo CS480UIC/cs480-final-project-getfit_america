@@ -5,14 +5,14 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-
-
+import java.util.ArrayList;
+import java.util.List;
 
 //import java.util.ArrayList;
 //import java.util.List;
 
 import manager.domain.Manager;
+import trainer.domain.Trainer;
 
 /**
  * DDL functions performed in database
@@ -137,6 +137,32 @@ public class ManagerDao {
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
+	}
+	
+	public List<Object> findManagerId_2003_2005() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/getfitamerica", MySQL_user, MySQL_password);
+			String sql = "SELECT * from manager;";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Manager manager = new Manager();
+				manager.setId(resultSet.getInt("id"));
+				manager.setDepartment_id(resultSet.getInt("department_id"));
+				manager.setFirst_name(resultSet.getString("first_name"));
+				manager.setLast_name(resultSet.getString("last_name"));
+				manager.setCreated_at(resultSet.getDate("created_at"));
+				
+	    		list.add(manager);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
 	}
 	
 }

@@ -1,6 +1,8 @@
 package trainer.service;
 
 
+import java.util.List;
+
 import trainer.dao.TrainerDao;
 import trainer.domain.Trainer;
 
@@ -26,4 +28,8 @@ public class TrainerService {
 		trainerDao.add(form);
 	}
 
+	public List<Object> findallTrainers() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return trainerDao.findallTrainers();
+		
+	}	
 }

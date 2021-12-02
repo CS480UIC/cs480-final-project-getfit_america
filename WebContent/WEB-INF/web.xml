@@ -373,6 +373,29 @@
     <url-pattern>/AppointmentServletDelete</url-pattern>
   </servlet-mapping>     
   
+      <servlet>
+    <description></description>
+    <display-name>findAllTrainers</display-name>
+    <servlet-name>findAllTrainers</servlet-name>
+    <servlet-class>trainer.web.servlet.findAllTrainers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findAllTrainers</servlet-name>
+    <url-pattern>/findAllTrainers</url-pattern>
+  </servlet-mapping>  
+  
+  
+      <servlet>
+    <description></description>
+    <display-name>findAllManager_2003_2005</display-name>
+    <servlet-name>findAllManager_2003_2005</servlet-name>
+    <servlet-class>manager.web.servlet.findAllManager_2003_2005</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findAllManager_2003_2005</servlet-name>
+    <url-pattern>/findAllManager_2003_2005</url-pattern>
+  </servlet-mapping>  
+   
   <servlet>
   
     <description></description>

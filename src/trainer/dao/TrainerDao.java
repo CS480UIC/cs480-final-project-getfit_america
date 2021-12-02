@@ -5,14 +5,14 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-
-
+import java.util.ArrayList;
+import java.util.List;
 
 //import java.util.ArrayList;
 //import java.util.List;
 
 import trainer.domain.Trainer;
+
 
 /**
  * DDL functions performed in database
@@ -127,5 +127,34 @@ public class TrainerDao {
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+
+
+
+
+
+	
+	public List<Object> findallTrainers() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/getfitamerica", MySQL_user, MySQL_password);
+			String sql = "select * from trainer";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Trainer trainer = new Trainer();
+				trainer.setEmployee_id(resultSet.getInt("employee_id"));
+	    		trainer.setFirst_name(resultSet.getString("first_name"));
+	    		trainer.setLast_name(resultSet.getString("last_name"));
+	    		list.add(trainer);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
 	}
 }

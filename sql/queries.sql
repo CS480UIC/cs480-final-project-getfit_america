@@ -1,12 +1,12 @@
 -- Simple Query 1: Author Michael Misayah
 SELECT body_fat, first_name, last_name
-FROM Client
+FROM client
 WHERE body_fat < 21.0
 ORDER BY body_fat DESC;
 
 -- Simple Query 2: Author Melville Misayah
 SELECT * from manager
-WHERE ID BETWEEN 2001 AND 2003;
+WHERE id BETWEEN 2001 AND 2003;
 
 -- Simple Query 3: Author Mitchell Misayah
 select first_name,last_name, weight from client

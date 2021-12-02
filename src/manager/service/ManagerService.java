@@ -1,6 +1,8 @@
 package manager.service;
 
 
+import java.util.List;
+
 import manager.dao.ManagerDao;
 import manager.domain.Manager;
 
@@ -26,5 +28,10 @@ public class ManagerService {
 		if(entity1.getId()!=null && entity1.getId()==form.getId()) throw new ManagerException("This manager has been registered!");
 		managerDao.add(form);
 	}
+
+	public List<Object> findAllManagerId_2003_2005() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return managerDao.findManagerId_2003_2005();
+		
+	}	
 
 }
