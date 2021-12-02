@@ -230,6 +230,57 @@
   </servlet-mapping>
   
   
+   <servlet>
+    <description></description>
+    <display-name>ProgramServletCreate</display-name>
+    <servlet-name>ProgramServletCreate</servlet-name>
+    <servlet-class>program.web.servlet.ProgramServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProgramServletCreate</servlet-name>
+    <url-pattern>/ProgramServletCreate</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>ProgramServletDelete</display-name>
+    <servlet-name>ProgramServletDelete</servlet-name>
+    <servlet-class>program.web.servlet.ProgramServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProgramServletDelete</servlet-name>
+    <url-pattern>/ProgramServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+    <description></description>
+    <display-name>ProgramServletRead</display-name>
+    <servlet-name>ProgramServletRead</servlet-name>
+    <servlet-class>program.web.servlet.ProgramServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProgramServletRead</servlet-name>
+    <url-pattern>/ProgramServletRead</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+    <description></description>
+    <display-name>ProgramServletUpdate</display-name>
+    <servlet-name>ProgramServletUpdate</servlet-name>
+    <servlet-class>program.web.servlet.ProgramServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProgramServletUpdate</servlet-name>
+    <url-pattern>/ProgramServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
   
     <servlet>
     <description></description>

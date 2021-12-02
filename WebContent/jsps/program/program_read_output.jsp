@@ -24,7 +24,13 @@
   <h1>Read Program Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Program    :<input type="text" name="username" value="${program.username }" disabled/>
+	Enrollment Number    :<input type="text" name="enrollment_number" value="${program.enrollment_number }"disabled/>
+	<br/>	
+	Program ID    :<input type="text" name="program_id" value="${program.program_id }"disabled/>
+	<br/>	
+	Program Name    :<input type="text" name="program_name" value="${program.program_name }"disabled/>
+	<br/>	
+	Description    :<input type="text" name="description" value="${program.description }"disabled/>
 	<br/>
 
 </form>

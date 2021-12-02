@@ -22,10 +22,10 @@
   
   <body>
   <h1>Delete Client</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/ProgramServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete Program   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Delete Program   :<input type="text" name="enrollment_number" value="${form.enrollment_number }"/>
+	<span style="color: red; font-weight: 900">${errors.enrollment_number }</span>
 	<br/>
 	<input type="submit" value="Delete Program"/>
 </form>

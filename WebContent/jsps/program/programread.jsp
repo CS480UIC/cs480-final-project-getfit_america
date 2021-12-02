@@ -23,10 +23,10 @@
   <body>
   <h1>Read Program</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/ProgramServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	Program    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Program    :<input type="text" name="enrollment_number" value="${form.enrollment_number }"/>
+	<span style="color: red; font-weight: 900">${errors.enrollment_number }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>

@@ -22,9 +22,22 @@
   
   <body>
   <h1>Program Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	Program Name    :<input type="text" name="username" value="${form.code }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/ProgramServletCreate'/>" method="post">
+
+	Enrollment Number    :<input type="text" name="enrollment_number" value="${form.enrollment_number }"/>
+	<span style="color: red; font-weight: 900">${errors.enrollment_number }</span>
+	<br/>
+	
+	Program ID    :<input type="text" name="program_id" value="${form.program_id }"/>
+	<span style="color: red; font-weight: 900">${errors.program_id }</span>
+	<br/>
+	
+	Program Name    :<input type="text" name="program_name" value="${form.program_name }"/>
+	<span style="color: red; font-weight: 900">${errors.program_name }</span>
+	<br/>
+	
+	Description    :<input type="text" name="description" value="${form.description }"/>
+	<span style="color: red; font-weight: 900">${errors.description }</span>
 	<br/>
 	<input type="submit" value="Create Program"/>
 </form>

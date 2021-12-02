@@ -68,6 +68,7 @@ public class ClientDao {
 			String sql = "insert into client (client_id, trainer_id, first_name, last_name, age, weight, body_fat) values(?,?,?,?,?,?,?)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 			
+			
 		    preparestatement.setInt(1,form.getClient_id());
 		    preparestatement.setInt(2,form.getTrainer_id());
 		    preparestatement.setString(3,form.getFirst_name());
