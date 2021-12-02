@@ -22,17 +22,22 @@
   
   <body>
   <h1>Appointment Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	Program    :<input type="text" name="programName" value="${form.programName }"/>
-	<span style="color: red; font-weight: 900">${errors.programName }</span>
+<form action="<c:url value='/AppointmentServletCreate'/>" method="post">
+
+	Selected Program    :<input type="text" name="selected_prog" value="${form.selected_prog }"/>
+	<span style="color: red; font-weight: 900">${errors.selected_prog }</span>
 	<br/>
 	
-	Date    :<input type="text" name="date" value="${form.date }"/>
-	<span style="color: red; font-weight: 900">${errors.date }</span>
+	Appointment Date    :<input type="text" name="appointment_date" value="${form.appointment_date }"/>
+	<span style="color: red; font-weight: 900">${errors.appointment_date }</span>
 	<br/>
 	
-	Program    :<input type="text" name="location" value="${form.location }"/>
+	Location    :<input type="text" name="location" value="${form.location }"/>
 	<span style="color: red; font-weight: 900">${errors.location }</span>
+	<br/>
+	
+	Program app number    :<input type="text" name="program_app_num" value="${form.program_app_num }"/>
+	<span style="color: red; font-weight: 900">${errors.program_app_num }</span>
 	<br/>
 	<input type="submit" value="Create Appointment"/>
 </form>
