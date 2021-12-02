@@ -70,7 +70,7 @@ public class AppointmentDao {
 			
 			String sql = "insert into appointment values(?,?,?,?)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setInt(1,form.getProgram_app_num());
+		    preparestatement.setInt(1,form.getSelected_prog());
 		    preparestatement.setDate(2,form.getAppointment_date());
 		    preparestatement.setString(3,form.getLocation());
 		    preparestatement.setInt(4,form.getProgram_app_num());

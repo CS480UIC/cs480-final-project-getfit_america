@@ -36,7 +36,7 @@
 <h1>Update the values below</h1>
 <form action="<c:url value='/ProgramServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-		<input type="hidden" name="enrollment_id" value="${program.enrollment_id }"/>
+		<input type="hidden" name="enrollment_id" value="${program.enrollment_number }"/>
 		
 		
 	Enrollment Number    :<input type="text" name="enrollment_number" value="${form.enrollment_number }"/>
