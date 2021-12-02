@@ -27,7 +27,7 @@
 	ID    :<input type="text" name="client_id" value="${form.client_id }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>		
-	Trainer ID    :<input type="text" name="client_id" value="${form.trainer_id }"/>
+	Trainer ID    :<input type="text" name="trainer_id" value="${form.trainer_id }"/>
 	<span style="color: red; font-weight: 900">${errors.trainerid }</span>
 	<br/>	
 	First Name：<input type="text" name="first_name" value="${form.first_name }"/>
