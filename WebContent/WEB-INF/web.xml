@@ -99,6 +99,103 @@
   
   <servlet>
     <description></description>
+    <display-name>TrainerServletCreate</display-name>
+    <servlet-name>TrainerServletCreate</servlet-name>
+    <servlet-class>trainer.web.servlet.TrainerServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TrainerServletCreate</servlet-name>
+    <url-pattern>/TrainerServletCreate</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>TrainerServletRead</display-name>
+    <servlet-name>TrainerServletRead</servlet-name>
+    <servlet-class>trainer.web.servlet.TrainerServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TrainerServletRead</servlet-name>
+    <url-pattern>/TrainerServletRead</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <description></description>
+    <display-name>TrainerServletDelete</display-name>
+    <servlet-name>TrainerServletDelete</servlet-name>
+    <servlet-class>trainer.web.servlet.TrainerServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TrainerServletDelete</servlet-name>
+    <url-pattern>/TrainerServletDelete</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>TrainerServletUpdate</display-name>
+    <servlet-name>TrainerServletUpdate</servlet-name>
+    <servlet-class>trainer.web.servlet.TrainerServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TrainerServletUpdate</servlet-name>
+    <url-pattern>/TrainerServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>ClientServletCreate</display-name>
+    <servlet-name>ClientServletCreate</servlet-name>
+    <servlet-class>client.web.servlet.ClientServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClientServletCreate</servlet-name>
+    <url-pattern>/ClientServletCreate</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>ClientServletRead</display-name>
+    <servlet-name>ClientServletRead</servlet-name>
+    <servlet-class>client.web.servlet.ClientServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClientServletRead</servlet-name>
+    <url-pattern>/ClientServletRead</url-pattern>
+  </servlet-mapping>  
+  
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>ClientServletDelete</display-name>
+    <servlet-name>ClientServletDelete</servlet-name>
+    <servlet-class>client.web.servlet.ClientServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClientServletDelete</servlet-name>
+    <url-pattern>/ClientServletDelete</url-pattern>
+  </servlet-mapping>  
+  
+    
+    <servlet>
+    <description></description>
+    <display-name>ClientServletUpdate</display-name>
+    <servlet-name>ClientServletUpdate</servlet-name>
+    <servlet-class>client.web.servlet.ClientServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClientServletUpdate</servlet-name>
+    <url-pattern>/ClientServletUpdate</url-pattern>
+  </servlet-mapping>  
+  
+  
+  
+  
+  <servlet>
+    <description></description>
     <display-name>findAll</display-name>
     <servlet-name>findAll</servlet-name>
     

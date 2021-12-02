@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title>Trainer Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,15 +22,15 @@
   
   <body>
   <h1>Trainer Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	Employee ID    :<input type="text" name="employee id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/TrainerServletCreate'/>" method="post">
+	Employee ID    :<input type="text" name="employee id" value="${form.employee_id }"/>
+	<span style="color: red; font-weight: 900">${errors.employeee_id }</span>
 	<br/>
-	First Name：<input type="text" name="First Name" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	First Name：<input type="text" name="First Name" value="${form.first_name }"/>
+	<span style="color: red; font-weight: 900">${errors.first_name }</span>
 	<br/>
-	Last Name	：<input type="text" name="Last Name" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Last Name	：<input type="text" name="Last Name" value="${form.last_name }"/>
+	<span style="color: red; font-weight: 900">${errors.last_name }</span>
 	<br/>
 	<input type="submit" value="Create Trainer"/>
 </form>
