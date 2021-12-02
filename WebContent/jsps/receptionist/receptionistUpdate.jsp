@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update Entity1</title>
+    <title>Update Receptionist</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,9 +22,9 @@
   
   <body>
   <h1>Update Receptionist</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/ReceptionistServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update Receptionist   :<input type="text" name="username" value="${form.username }"/>
+	Update Receptionist   :<input type="text" name="employee_id" value="${receptionist.employee_id }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	<input type="submit" value="Update Receptionist"/>

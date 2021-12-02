@@ -30,21 +30,22 @@
 	Manager ID    :<input type="text" name="id" value="${manager.id}"disabled/>
 	<br/>
 	
-	Assigned Department   :<input type="text" name="assigned department" value="${manager.assignedDepartment }"/>
+				
+	Assigned Department   :<input type="text" name="assigned department_id" value="${manager.department_id }"disabled/>
 	<br/>
 	
-	First Name    :<input type="text" name="first name" value="${manager.firstName }"disabled/>
+	First Name    :<input type="text" name="first_name" value="${manager.first_name }"disabled/>
 	<br/>
 
-	Last Name    :<input type="text" name="last name" value="${manager.lastName }"disabled/>
+	Last Name    :<input type="text" name="last_name" value="${manager.last_name }"disabled/>
 	<br/>
 	
-	Created at    :<input type="text" name="created at" value="${manager.createdAt }"disabled/>
-	<br/>	
+	Created at    :<input type="text" name="created_at" value="${manager.created_at }"disabled/>
+	<br/>
 
 	<input type="submit" value="Delete Entity1"/>
 </form>
-</form>
+
 
 </body>
 </html>

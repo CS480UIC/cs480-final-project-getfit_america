@@ -58,13 +58,13 @@ public class ManagerServletDelete extends HttpServlet {
 				}
 				else{
 				request.setAttribute("msg", "Manager not found");
-				request.getRequestDispatcher("/jsps/manager/manager_read_output.jsp").forward(request, response);
+				request.getRequestDispatcher("/jsps/manager/manager_delete_output.jsp").forward(request, response);
 			}
 		}
 		else if(method.equals("delete"))
 		{	
 			try {
-				managerDao.delete(request.getParameter("username"));
+				managerDao.delete(request.getParameter("id"));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -73,7 +73,7 @@ public class ManagerServletDelete extends HttpServlet {
 				e1.printStackTrace();
 			}
 			request.setAttribute("msg", "Entity Deleted");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.getRequestDispatcher("/jsps/manager/manager_read_output.jsp").forward(request, response);
 		}
 	}
 }

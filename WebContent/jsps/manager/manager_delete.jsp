@@ -24,8 +24,8 @@
   <h1>Delete Manager</h1>
 <form action="<c:url value='/ManagerServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete Manager ID   :<input type="text" name="username" value="${form.managerID }"/>
-	<span style="color: red; font-weight: 900">${errors.managerID }</span>
+	Delete Manager ID   :<input type="text" name="id" value="${form.id }"/>
+	<span style="color: red; font-weight: 900">${errors.id }</span>
 	<br/>
 	<input type="submit" value="Delete Manager"/>
 </form>

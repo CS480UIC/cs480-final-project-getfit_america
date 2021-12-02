@@ -28,7 +28,7 @@
 
 	Manager ID    :<input type="text" name="id" value="${manager.id}"disabled/>
 	<br/>
-	Assigned Department   :<input type="text" name="assigned department" value="${manager.department_id }"/>
+	Assigned Department   :<input type="text" name="assigned department" value="${manager.department_id }"disabled/>
 	<br/>
 	First Name    :<input type="text" name="first name" value="${manager.first_name }"disabled/>
 	<br/>

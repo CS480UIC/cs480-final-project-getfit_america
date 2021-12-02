@@ -23,7 +23,7 @@
   <body>
   <h1>Receptionist Create</h1>
 <form action="<c:url value='/ReceptionistServletCreate'/>" method="post">
-	Employee ID    :<input type="text" name="username" value="${form.employee_id }"/>
+	Employee ID    :<input type="text" name="employee_id" value="${form.employee_id }"/>
 	<span style="color: red; font-weight: 900">${errors.employee_id }</span>
 	<br/>
 	First Name：<input type="text" name="first_name" value="${form.first_name }"/>

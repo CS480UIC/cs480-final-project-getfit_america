@@ -24,7 +24,7 @@
   <h1>Update</h1>
 <form action="<c:url value='/ManagerServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update ID   :<input type="text" name="ID" value="${form.ID }"/>
+	Update ID   :<input type="text" name="id" value="${form.id }"/>
 	<span style="color: red; font-weight: 900">${errors.ID }</span>
 	<br/>
 	<input type="submit" value="Update Manager"/>

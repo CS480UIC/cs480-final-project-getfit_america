@@ -22,9 +22,9 @@
   
   <body>
   <h1>Delete Receptionist</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/ReceptionistServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete Receptionist   :<input type="text" name="username" value="${form.username }"/>
+	Delete Receptionist   :<input type="text" name="employee_id" value="${form.employee_id }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	<input type="submit" value="Delete Receptionist"/>
