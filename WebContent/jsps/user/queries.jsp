@@ -47,6 +47,6 @@
     <br/>
     <a href="<c:url value='/findTrainerClientSpecialCondition'/>" target="body">Complex Query 2 (correlated subquery without EXIST): The query identifies trainers that are training unhealthy male individuals within the age range of 20-39 </a>&nbsp;&nbsp;
     <br/>
-    <a href="<c:url value='/findTrainerComplexQuery3'/>" target="body">Complex Query 3</a>&nbsp;&nbsp;      
+    <a href="<c:url value='/findTrainerComplexQuery3'/>" target="body">SELECT first_name as complex_query3 from trainer WHERE EXISTS ( SELECT first_name from client WHERE client.trainer_id = trainer.employee_id and age = 19</a>&nbsp;&nbsp;      
   </body>
 </html>
