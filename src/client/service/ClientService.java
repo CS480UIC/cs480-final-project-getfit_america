@@ -32,4 +32,9 @@ public class ClientService {
 		return clientDao.findWeightAvg();
 		
 	}
+
+	public List<Object> findWeightBelow180() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return clientDao.findWeighBelow180();
+		
+	}
 }

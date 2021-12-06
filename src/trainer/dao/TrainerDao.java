@@ -228,7 +228,7 @@ public class TrainerDao {
 				Trainer trainer = new Trainer();
 				
 				trainer.setFirst_name(resultSet.getString("first_name"));
-				trainer.setFirst_name(resultSet.getString("last_name"));
+
 	    		list.add(trainer);
 			 }
 			connect.close();
@@ -238,4 +238,6 @@ public class TrainerDao {
 		return list;
 		
 	}
+	
+
 }

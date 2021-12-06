@@ -162,4 +162,32 @@ public class ClientDao {
 		return list;
 		
 	}
+	
+	public List<Object> findWeighBelow180() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/getfitamerica", MySQL_user, MySQL_password);
+			String sql = "select * from weight_below_180";
+//			CREATE VIEW weight_below_180 as
+//			select first_name,last_name, weight from client
+//			WHERE weight < 180
+//			ORDER BY weight DESC;
+			
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Client program = new Client();
+				program.setFirst_name(resultSet.getString("first_name"));
+				program.setLast_name(resultSet.getString("last_name"));
+				program.setWeight(Double.parseDouble(resultSet.getString("weight")));
+	    		list.add(program);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
 }

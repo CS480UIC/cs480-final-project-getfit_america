@@ -23,13 +23,17 @@
   
   <body>
     <h1>List of Queries</h1>
+    <br/>
+    <h2>List the users in the user table</h2>
+    <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;  
+    <br/>  
     <h2>First three simples queries</h2>
-    <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
     <br/>
  	<a href="<c:url value='/findAllTrainers'/>" target="body">List trainers with employee id that's less than 200</a>&nbsp;&nbsp;
     <br/>
     <a href="<c:url value='/findAllManager_2003_2005'/>" target="body">Manager id between 2003 and 2005</a>&nbsp;&nbsp;
+    <br/>
+    <a href="<c:url value='/findClientWeightBelow180'/>" target="body">Clients below 180 pounds</a>&nbsp;&nbsp;
     <br/>
     <h2>First three aggregate queries</h2>
     <a href="<c:url value='/findKeto'/>" target="body">Number of ketos in program (COUNT)</a>&nbsp;&nbsp;
