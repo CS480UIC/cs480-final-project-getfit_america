@@ -5,8 +5,12 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import client.domain.Client;
+import client.domain.ClientAvg;
+import program.domain.ProgramKeto;
 
 /**
  * DDL functions performed in database
@@ -133,5 +137,29 @@ public class ClientDao {
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+	public List<Object> findWeightAvg() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/getfitamerica", MySQL_user, MySQL_password);
+			String sql = "select * from avg_weight";
+			//CREATE VIEW as avg_weight
+			//		SELECT AVG(weight) as avg_weight from client WHERE age > 18;
+			
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				ClientAvg program = new ClientAvg();
+				program.setAvg_weight(Double.parseDouble(resultSet.getString("avg_weight")));
+	    		list.add(program);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
 	}
 }

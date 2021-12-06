@@ -5,14 +5,16 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-
-
+import java.util.ArrayList;
+import java.util.List;
 
 //import java.util.ArrayList;
 //import java.util.List;
 
 import program.domain.Program;
+import program.domain.ProgramDescription;
+import program.domain.ProgramKeto;
+import user.domain.User;
 
 /**
  * DDL functions performed in database
@@ -126,5 +128,55 @@ public class ProgramDao {
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+
+	
+	public List<Object> findKeto() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/getfitamerica", MySQL_user, MySQL_password);
+			String sql = "select * from num_of_keto";
+			//CREATE VIEW as num_of_keto
+			//	SELECT COUNT(*) as num_of_keto from program where program_name = 'keto diet'
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				ProgramKeto program = new ProgramKeto();
+				program.setNum_of_keto(Integer.parseInt(resultSet.getString("num_of_keto")));
+	    		list.add(program);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
+	
+	public List<Object> program_concat() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/getfitamerica", MySQL_user, MySQL_password);
+			String sql = "select * from prog_concat";
+//			CREATE view prog_concat as
+//			SELECT CONCAT(UPPER(program_name), ': ', description) as prog_concat
+//			FROM program;
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				ProgramDescription program = new ProgramDescription();
+				program.setProgram_description(resultSet.getString("prog_concat"));
+			
+	    		list.add(program);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
 	}
 }

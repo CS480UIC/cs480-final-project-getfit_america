@@ -27,8 +27,15 @@
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
     <br/>
- 	<a href="<c:url value='/findAllTrainers'/>" target="body">Please list all the trainers in the table</a>&nbsp;&nbsp;
+ 	<a href="<c:url value='/findAllTrainers'/>" target="body">List trainers with employee id that's less than 200</a>&nbsp;&nbsp;
     <br/>
     <a href="<c:url value='/findAllManager_2003_2005'/>" target="body">Manager id between 2003 and 2005</a>&nbsp;&nbsp;
+    <br/>
+    <h2>First three aggregate queries</h2>
+    <a href="<c:url value='/findKeto'/>" target="body">Number of ketos in program (COUNT)</a>&nbsp;&nbsp;
+    <br/>
+    <a href="<c:url value='/findWeightAvg'/>" target="body">Average weight of client above 18 (AVG)</a>&nbsp;&nbsp;
+    <br/>
+    <a href="<c:url value='/programConcat'/>" target="body">Concatenate program_name and description (CONCAT)</a>&nbsp;&nbsp;    
   </body>
 </html>

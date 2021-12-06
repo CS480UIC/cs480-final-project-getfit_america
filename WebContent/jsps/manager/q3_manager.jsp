@@ -14,7 +14,7 @@
 		<th>first_name</th>
 		<th>last_name</th>
 	</tr>
-<c:forEach items="${ManagerList}" var="user">
+<c:forEach items="${ManagerList}" var="manager">
 	<tr>
 		<td>${manager.first_name}</td>
 		<td>${manager.last_name}</td>

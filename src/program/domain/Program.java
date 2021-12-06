@@ -3,7 +3,7 @@ package program.domain;
 /**
  * User object
  * 
- * @author Aayush Makharia
+ * @author Melville Misayah
  * 
  */
 public class Program {

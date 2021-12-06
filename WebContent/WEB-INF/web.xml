@@ -397,7 +397,6 @@
   </servlet-mapping>  
    
   <servlet>
-  
     <description></description>
     <display-name>findAll</display-name>
     <servlet-name>findAll</servlet-name>
@@ -408,6 +407,43 @@
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>findKeto</display-name>
+    <servlet-name>findKeto</servlet-name>
+    
+    <servlet-class>program.web.servlet.findKeto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findKeto</servlet-name>
+    <url-pattern>/findKeto</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findWeightAvg</display-name>
+    <servlet-name>findWeightAvg</servlet-name>
+    
+    <servlet-class>client.web.servlet.findWeightAvg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findWeightAvg</servlet-name>
+    <url-pattern>/findWeightAvg</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>programConcat</display-name>
+    <servlet-name>programConcat</servlet-name>
+    
+    <servlet-class>program.web.servlet.programConcat</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>programConcat</servlet-name>
+    <url-pattern>/programConcat</url-pattern>
+  </servlet-mapping>     
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

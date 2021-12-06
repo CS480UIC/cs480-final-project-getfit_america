@@ -8,19 +8,14 @@
 
 </head>
 <body>
-	<h3 align="center"> Trainer Table </h3>
+	<h3 align="center"> Program Concatenate Table </h3>
 	<table border="1" width="70%" align="center">
 	<tr>
-		<th>employee_id</th>
-		<th>first_name</th>
-		<th>last_name</th>
+		<th>Number of Keto</th>
 	</tr>
-<c:forEach items="${TrainerList}" var="trainer">
+<c:forEach items="${ProgramList}" var="program">
 	<tr>
-		<td>${trainer.employee_id}</td>
-		<td>${trainer.first_name}</td>
-		<td>${trainer.last_name}</td>
-
+		<td>${program.program_description}</td>
 	</tr>
 </c:forEach>
 </table>

@@ -1,6 +1,8 @@
 package client.service;
 
 
+import java.util.List;
+
 import client.dao.ClientDao;
 import client.domain.Client;
 
@@ -26,5 +28,8 @@ public class ClientService {
 		clientDao.add(form);
 	}
 
-
+	public List<Object> findWeightAvg() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return clientDao.findWeightAvg();
+		
+	}
 }

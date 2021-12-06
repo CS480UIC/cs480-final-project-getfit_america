@@ -1,6 +1,8 @@
 package program.service;
 
 
+import java.util.List;
+
 import program.dao.ProgramDao;
 import program.domain.Program;
 
@@ -26,4 +28,13 @@ public class ProgramService {
 		programDao.add(form);
 	}
 
+	public List<Object> findKeto() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return programDao.findKeto();
+		
+	}
+
+	public List<Object> program_concat() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return programDao.program_concat();
+		
+	}
 }
