@@ -79,8 +79,8 @@ public class ProgramServletUpdate extends HttpServlet {
 			//TODO fix
 			form.setEnrollment_number(Integer.parseInt( request.getParameter("enrollment_number")));
 			form.setProgram_id(Integer.parseInt( request.getParameter("program_id")));
-			form.setProgram_name(info.get(3));
-			form.setDescription(info.get(4));			
+			form.setProgram_name(info.get(4));
+			form.setDescription(info.get(5));			
 			
 
 			try {
