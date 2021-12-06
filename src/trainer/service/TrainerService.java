@@ -37,4 +37,12 @@ public class TrainerService {
 		return trainerDao.findTrainerClient();
 		
 	}
+	
+	public List<Object> findClientSpecialCondition() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return trainerDao.findClientSpecialCondition();	
+	}
+	
+	public List<Object> findTrainerComplexQuery3() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return trainerDao.findTrainerComplexQuery3();	
+	}
 }

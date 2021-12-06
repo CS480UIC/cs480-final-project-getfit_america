@@ -457,7 +457,34 @@
   <servlet-mapping>
     <servlet-name>findTrainerClient</servlet-name>
     <url-pattern>/findTrainerClient</url-pattern>
-  </servlet-mapping>     
+  </servlet-mapping>
+  
+     
+  <servlet>
+    <description></description>
+    <display-name>findTrainerClientSpecialCondition</display-name>
+    <servlet-name>findTrainerClientSpecialCondition</servlet-name>
+    
+    <servlet-class>trainer.web.servlet.findTrainerClientSpecialCondition</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findTrainerClientSpecialCondition</servlet-name>
+    <url-pattern>/findTrainerClientSpecialCondition</url-pattern>
+  </servlet-mapping> 
+
+
+
+  <servlet>
+    <description></description>
+    <display-name>findTrainerComplexQuery3</display-name>
+    <servlet-name>findTrainerComplexQuery3</servlet-name>
+    
+    <servlet-class>trainer.web.servlet.findTrainerComplexQuery3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findTrainerComplexQuery3</servlet-name>
+    <url-pattern>/findTrainerComplexQuery3</url-pattern>
+  </servlet-mapping> 
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

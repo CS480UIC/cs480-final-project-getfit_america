@@ -40,6 +40,9 @@
     <br/>
     <h2>First three complex queries</h2>
     <a href="<c:url value='/findTrainerClient'/>" target="body">Trainer and client (JOIN)</a>&nbsp;&nbsp;
-    findTrainerClient    
+    <br/>
+    <a href="<c:url value='/findTrainerClientSpecialCondition'/>" target="body">Complex Query 2 (correlated subquery without EXIST): The query identifies trainers that are training unhealthy male individuals within the age range of 20-39 </a>&nbsp;&nbsp;
+    <br/>
+    <a href="<c:url value='/findTrainerComplexQuery3'/>" target="body">Complex Query 3</a>&nbsp;&nbsp;      
   </body>
 </html>

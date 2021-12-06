@@ -13,6 +13,7 @@ import java.util.List;
 
 import trainer.domain.Trainer;
 import trainer.domain.TrainerClient;
+import trainer.domain.TrainerClientSpecialCondition;
 
 
 /**
@@ -172,6 +173,62 @@ public class TrainerDao {
 				
 				trainer.setClient_name(resultSet.getString("trainer_name"));
 				trainer.setTrainer_name(resultSet.getString("client_name"));
+	    		list.add(trainer);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
+	
+	public List<Object> findClientSpecialCondition() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/getfitamerica", MySQL_user, MySQL_password);
+			String sql = "select * from complex_query2";
+//			CREATE view complex_query2 as
+//			SELECT first_name, last_name
+//			FROM trainer
+//			WHERE employee_id = ANY
+//				(SELECT trainer_id
+//				from client
+//				where body_fat < 8.0 or body_fat > 19.0 and age >= 20 and age <= 39);
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				TrainerClientSpecialCondition trainer = new TrainerClientSpecialCondition();
+				
+				trainer.setFirst_name(resultSet.getString("first_name"));
+				trainer.setFirst_name(resultSet.getString("last_name"));
+	    		list.add(trainer);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
+
+	public List<Object> findTrainerComplexQuery3() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/getfitamerica", MySQL_user, MySQL_password);
+			String sql = "select * from complex_query3";
+//			CREATE view complex_query3 as
+//			SELECT first_name as complex_query3 from trainer
+//			WHERE EXISTS ( SELECT first_name from client WHERE client.trainer_id = trainer.employee_id and age = 19);
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Trainer trainer = new Trainer();
+				
+				trainer.setFirst_name(resultSet.getString("first_name"));
+				trainer.setFirst_name(resultSet.getString("last_name"));
 	    		list.add(trainer);
 			 }
 			connect.close();
