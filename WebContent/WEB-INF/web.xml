@@ -443,6 +443,20 @@
   <servlet-mapping>
     <servlet-name>programConcat</servlet-name>
     <url-pattern>/programConcat</url-pattern>
+  </servlet-mapping> 
+  
+  
+
+  <servlet>
+    <description></description>
+    <display-name>findTrainerClient</display-name>
+    <servlet-name>findTrainerClient</servlet-name>
+    
+    <servlet-class>trainer.web.servlet.findTrainerClient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findTrainerClient</servlet-name>
+    <url-pattern>/findTrainerClient</url-pattern>
   </servlet-mapping>     
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

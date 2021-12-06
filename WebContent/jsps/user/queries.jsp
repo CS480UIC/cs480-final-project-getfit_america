@@ -36,6 +36,10 @@
     <br/>
     <a href="<c:url value='/findWeightAvg'/>" target="body">Average weight of client above 18 (AVG)</a>&nbsp;&nbsp;
     <br/>
-    <a href="<c:url value='/programConcat'/>" target="body">Concatenate program_name and description (CONCAT)</a>&nbsp;&nbsp;    
+    <a href="<c:url value='/programConcat'/>" target="body">Concatenate program_name and description (CONCAT)</a>&nbsp;&nbsp;
+    <br/>
+    <h2>First three complex queries</h2>
+    <a href="<c:url value='/findTrainerClient'/>" target="body">Trainer and client (JOIN)</a>&nbsp;&nbsp;
+    findTrainerClient    
   </body>
 </html>

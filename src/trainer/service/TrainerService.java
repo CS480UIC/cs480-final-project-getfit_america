@@ -31,5 +31,10 @@ public class TrainerService {
 	public List<Object> findallTrainers() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
 		return trainerDao.findallTrainers();
 		
-	}	
+	}
+	
+	public List<Object> findTrainerClient() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return trainerDao.findTrainerClient();
+		
+	}
 }
