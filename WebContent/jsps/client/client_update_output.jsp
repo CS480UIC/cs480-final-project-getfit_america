@@ -42,24 +42,24 @@
 
 
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/ClientServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
 		<input type="hidden" name="client_id" value="${client.client_id }"/>
 		
 		
-	Client ID    :<input type="text" name="client_id" value="${form.client_id }"disabled/>
+	Client ID    :<input type="text" name="client_id" value="${form.client_id }"/>
 	<br/>		
-	Trainer ID    :<input type="text" name="trainer_id" value="${form.trainer_id }"disabled/>
+	Trainer ID    :<input type="text" name="trainer_id" value="${form.trainer_id }"/>
 	<br/>	
-	First Name：<input type="text" name="first_name" value="${form.first_name }"disabled/>
+	First Name：<input type="text" name="first_name" value="${form.first_name }"/>
 	<br/>
-	Last Name：<input type="text" name="Last_name" value="${form.last_name }"disabled/>
+	Last Name：<input type="text" name="Last_name" value="${form.last_name }"/>
 	<br/>
-	Age	：<input type="text" name="age" value="${form.age }"disabled/>
+	Age	：<input type="text" name="age" value="${form.age }"/>
 	<br/>
-	Weight	：<input type="text" name="weight" value="${form.weight }"disabled/>
+	Weight	：<input type="text" name="weight" value="${form.weight }"/>
 	<br/>
-	Body Fat Percentage	：<input type="text" name="body_fat_percentage" value="${form.body_fat_percentage }"disabled/>
+	Body Fat Percentage	：<input type="text" name="body_fat_percentage" value="${form.body_fat_percentage }"/>
 	<br/>
 	
 	<input type="submit" value="Update Client"/>

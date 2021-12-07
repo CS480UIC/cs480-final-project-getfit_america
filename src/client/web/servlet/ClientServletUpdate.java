@@ -77,13 +77,13 @@ public class ClientServletUpdate extends HttpServlet {
 				info.add(values[0]);
 			}
 			//TODO fix
-			form.setClient_id(Integer.parseInt( info.get(0)));
-			form.setTrainer_id(Integer.parseInt( info.get(1)));
-			form.setFirst_name(info.get(2));
-			form.setLast_name(info.get(3));
-			form.setAge(Integer.parseInt( info.get(4)));	
-			form.setWeight(Double.parseDouble( info.get(5)));
-			form.setBody_fat(Double.parseDouble( info.get(6)));
+			form.setClient_id(Integer.parseInt( info.get(1)));
+			form.setTrainer_id(Integer.parseInt( info.get(2)));
+			form.setFirst_name(info.get(3));
+			form.setLast_name(info.get(4));
+			form.setAge(Integer.parseInt( info.get(5)));	
+			form.setWeight(Double.parseDouble( info.get(6)));
+			form.setBody_fat(Double.parseDouble( info.get(7)));
 
 			try {
 				clientdao.update(form);
